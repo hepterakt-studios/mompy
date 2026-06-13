@@ -5,54 +5,45 @@
 # Mompy: Learn Python with a Retro Training Console
 
 [![Status](https://img.shields.io/badge/status-in%20development-8cff3a?style=for-the-badge)](#project-status)
-[![Platform](https://img.shields.io/badge/platform-cross--platform-6f42c1?style=for-the-badge)](#desktop-app)
+[![Platform](https://img.shields.io/badge/platform-cross--platform-6f42c1?style=for-the-badge)](#platform-strategy)
 [![Built with](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#technology-stack)
 [![Desktop](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#desktop-app)
 [![Python Training](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#what-mompy-does)
 
+<!-- Future community badge:
+[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YOUR_INVITE)
+-->
+
 [English](https://zdoc.app/en/macksonvictor/mompy) | [Português](https://zdoc.app/pt/macksonvictor/mompy)
 
-**Mompy** is a retro CRT-style desktop app that teaches Python through guided missions, instant feedback, local progress, sound effects, and a friendly monitor mascot.
+**Mompy** is a retro CRT-style desktop app that helps beginners learn Python through guided missions, instant feedback, local progress, sound effects, and a friendly monitor mascot.
 
 > [!NOTE]
-> Mompy is currently in active development. The repository is public, but the first downloadable desktop versions are still being prepared.
+> Mompy is currently in active development. The source code is public, but the first downloadable desktop releases are still being prepared.
 
 ---
 
-## Download options
+## Quick links
 
-Mompy is planned to be distributed as an installable desktop app.
-
-| Option | Status | Description |
+| Resource | Status | Link |
 | --- | --- | --- |
-| **Desktop releases** | Planned | Future app builds published through [GitHub Releases](https://github.com/macksonvictor/mompy/releases). |
-| **Windows build** | Planned | Installable `.exe` or installer package. |
-| **macOS build** | Planned | Future macOS app build. |
-| **Linux build** | Planned | Future Linux package or portable build. |
-| **Source code** | Available | Developers can clone the repository and run the project locally while it is in development. |
-
-When the first public version is ready, users should download it from:
-
-```txt
-https://github.com/macksonvictor/mompy/releases
-```
-
-The planned official website is:
-
-```txt
-https://mompy.co
-```
+| Source code | Available | [GitHub Repository](https://github.com/macksonvictor/mompy) |
+| Desktop downloads | Planned | [GitHub Releases](https://github.com/macksonvictor/mompy/releases) |
+| Official website | Planned | [mompy.co](https://mompy.co) |
+| Documentation | Planned | Coming soon |
+| Discord community | Planned | Coming soon |
+| Issues / feedback | Available | [GitHub Issues](https://github.com/macksonvictor/mompy/issues) |
 
 ---
 
 ## What Mompy does
 
-Mompy helps beginners learn Python by turning programming practice into small missions.
+Mompy turns beginner Python practice into small interactive missions.
 
 The app is designed to:
 
 - teach Python step by step;
-- give the user small coding challenges;
+- give the user short coding challenges;
 - validate the code written by the user;
 - show output and feedback immediately;
 - save progress locally;
@@ -60,6 +51,29 @@ The app is designed to:
 - make learning feel like using an old intelligent training terminal.
 
 The goal is simple: **open Mompy, complete missions, learn Python, and keep progressing.**
+
+---
+
+## Download options
+
+Mompy is planned to be distributed as a desktop app through GitHub Releases.
+
+| Platform | Package | Status |
+| --- | --- | --- |
+| Windows | `.exe` / installer | Planned |
+| macOS | `.dmg` | Planned |
+| Linux | `.AppImage` or another Linux package | Planned |
+| Web preview | Browser-based preview or documentation page | Possible later |
+
+Example future release assets:
+
+```txt
+Mompy-Setup-Windows.exe
+Mompy-macOS.dmg
+Mompy-Linux.AppImage
+```
+
+The repository should contain the source code. Generated builds and installers should be published through **GitHub Releases**, not committed into the main codebase.
 
 ---
 
@@ -78,16 +92,14 @@ The goal is simple: **open Mompy, complete missions, learn Python, and keep prog
 
 ## Main app areas
 
-Mompy is structured around a few core screens and systems.
-
 ### Loading screen
 
-The app starts with a CRT-style loading screen. It should feel like an old training terminal turning on.
+The app starts with a CRT-style loading screen that feels like an old training terminal turning on.
 
 Expected behavior:
 
 - show Mompy branding;
-- animate a loading bar;
+- animate a real loading bar;
 - avoid sound during loading;
 - transition cleanly to the start screen.
 
@@ -109,7 +121,7 @@ The mission screen is where learning happens.
 
 Expected behavior:
 
-- show mission objective;
+- show the mission objective;
 - provide a code editor area;
 - provide output feedback;
 - offer Help, Back, Run, Settings, and Exit controls;
@@ -162,7 +174,7 @@ Mompy should feel like an old intelligent training machine, not a normal website
 
 ---
 
-## Current feature status
+## Feature status
 
 | Area | Status |
 | --- | --- |
@@ -182,6 +194,7 @@ Mompy should feel like an old intelligent training machine, not a normal website
 | Electron packaging | Planned |
 | GitHub Releases | Planned |
 | Official website | Planned |
+| Discord community | Planned |
 
 ---
 
@@ -270,15 +283,13 @@ Electron
 Desktop app releases
 ```
 
-Planned distribution model:
+Distribution model:
 
 ```txt
 Mompy app = installable desktop app
 mompy.co = official website / download page
 GitHub Releases = app downloads
 ```
-
-The repository should contain the source code. Installers and generated builds should be published separately through GitHub Releases.
 
 ---
 
@@ -293,17 +304,9 @@ The project can start with one platform during early testing, but the long-term 
 | Windows | Planned |
 | macOS | Planned |
 | Linux | Planned |
-| Web version | Possible future option, mainly for preview or documentation |
+| Web preview | Possible future option, mainly for preview or documentation |
 
 Each operating system may need its own build/package later. GitHub Releases can contain separate downloads for each platform.
-
-Example future release assets:
-
-```txt
-Mompy-Setup-Windows.exe
-Mompy-macOS.dmg
-Mompy-Linux.AppImage
-```
 
 ---
 
@@ -448,7 +451,7 @@ Installers and packaged builds should be published later through **GitHub Releas
 
 ---
 
-## GitHub Releases
+## Release model
 
 The repository contains the source code.
 
@@ -640,35 +643,59 @@ The website can be used for:
 
 ---
 
-## Português
+## Related projects
 
-**Mompy** é um aplicativo retrô de treinamento em Python, criado para ajudar iniciantes a aprender programação por meio de pequenas missões interativas.
+Mompy can grow into a small ecosystem over time.
 
-Ele funciona como um console antigo de treinamento: o usuário lê uma missão, escreve código, executa, recebe feedback e avança para a próxima etapa.
+| Project | Status | Description |
+| --- | --- | --- |
+| **Mompy Desktop** | Current repository | The main retro Python training app. |
+| **Mompy Website** | Planned | Official website for downloads, screenshots, release notes, and documentation. |
+| **Mompy Missions** | Planned | A future mission/content area for Python lessons and challenge packs. |
+| **Mompy Docs** | Planned | Future documentation for users, developers, and contributors. |
 
-A ideia é unir:
+> [!NOTE]
+> Related projects will only be linked here when they exist. This section is prepared for future expansion without pretending that unfinished repositories already exist.
 
-- visual de computador antigo;
-- interface CRT verde;
-- mascote amigável;
-- missões de Python;
-- feedback visual e sonoro;
-- progresso salvo localmente;
-- aplicativo desktop instalável.
+---
 
-O Mompy não deve ser apresentado como um projeto apenas para Windows. A primeira fase pode começar por uma plataforma, mas a direção correta é preparar versões desktop para Windows, macOS e Linux quando o empacotamento estiver pronto.
+## Community
 
-Quando a primeira versão pública estiver pronta, o download deverá ficar disponível em:
+Mompy does not have an official community server yet, but this README is prepared for it.
 
-```txt
-https://github.com/macksonvictor/mompy/releases
+Planned community channels:
+
+- Discord server for announcements, feedback, and testing;
+- GitHub Issues for bugs and feature requests;
+- GitHub Discussions for ideas and questions, if enabled later.
+
+Future Discord badge placeholder:
+
+```md
+[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YOUR_INVITE)
 ```
 
-Site oficial planejado:
+---
 
-```txt
-https://mompy.co
-```
+## Stars stats
+
+<p align="center">
+<a href="https://star-history.com/#macksonvictor/mompy">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
+    <img alt="Mompy Star History Chart" src="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
+  </picture>
+</a>
+</p>
+
+---
+
+## Contributors
+
+<a href="https://github.com/macksonvictor/mompy/graphs/contributors" alt="View Contributors">
+  <img src="https://contrib.rocks/image?repo=macksonvictor/mompy&max=1000&columns=10" alt="Mompy contributors" />
+</a>
 
 ---
 

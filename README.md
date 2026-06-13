@@ -1,74 +1,77 @@
-# Mompy: Retro Python Training Console
+# Mompy: Learn Python with a Retro Training Console
+
+<!--
+Future cover image:
+
+<p align="center">
+  <img src="assets/branding/mompy-cover.png" alt="Mompy retro monitor" width="360">
+</p>
+-->
 
 [![Status](https://img.shields.io/badge/status-in%20development-8cff3a?style=for-the-badge)](#project-status)
 [![Platform](https://img.shields.io/badge/platform-Windows-0b5fff?style=for-the-badge&logo=windows&logoColor=white)](#desktop-app)
 [![Built with](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#technology-stack)
 [![Desktop](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#desktop-app)
-[![Python Training](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#what-is-mompy)
+[![Python Training](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#what-mompy-does)
 
 [English](https://zdoc.app/en/macksonvictor/mompy) | [Português](https://zdoc.app/pt/macksonvictor/mompy)
 
----
-
-**Mompy** is a retro CRT-style Python Training Console built to help beginners learn programming through small interactive missions.
-
-It combines a nostalgic old-computer interface, a friendly monitor mascot, terminal-like interactions, mission progress, sound effects, animations, and a local-first desktop experience.
-
-> [!NOTE]
-> Mompy is currently in active development.
-> The current focus is interface polish, mission flow, local progress, audio, animations, and desktop packaging.
+**Mompy** is a retro CRT-style desktop app that teaches Python through guided missions, instant feedback, local progress, sound effects, and a friendly monitor mascot.
 
 ---
 
-## What is Mompy?
+## What Mompy does
 
-Mompy is a learning app designed to make programming feel more alive, focused, and fun.
+Mompy helps beginners learn Python by turning programming practice into small missions.
 
-Instead of being just another normal coding website, Mompy is being built as a **desktop training console** with a retro industrial CRT interface. The user learns Python through guided missions, receives feedback from Mompy, and progresses step by step.
+The app is designed to:
 
-The long-term goal is to make Mompy feel like a small companion that teaches programming in a calm, friendly, and memorable way.
+- teach Python step by step;
+- give the user small coding challenges;
+- validate the code written by the user;
+- show output and feedback immediately;
+- save progress locally;
+- react with animations and sounds;
+- make learning feel like using an old intelligent training terminal.
 
----
-
-## Core Concept
-
-Mompy follows a simple learning loop:
-
-1. The user opens the app.
-2. Mompy starts with a CRT-style loading screen.
-3. The start screen appears with the user profile and progress.
-4. The user starts or continues Python training.
-5. Each mission gives a small coding challenge.
-6. The user writes code and runs it.
-7. Mompy reacts with feedback, sounds, and animations.
-8. Progress is saved locally on the user's computer.
+The goal is simple: **open Mompy, complete missions, learn Python, and keep progressing.**
 
 ---
 
-## Visual Identity
+## Core learning loop
 
-Mompy uses a retro-futuristic visual language inspired by old terminals, industrial control panels, and CRT monitors.
-
-Main visual characteristics:
-
-- Dark industrial interface
-- Green CRT glow
-- Pixel/scanline effects
-- Retro monitor mascot
-- Terminal-style text
-- Metallic UI panels
-- Old-computer atmosphere
-- Local desktop app feeling
-
-The goal is to make Mompy feel like an old intelligent training terminal.
+1. Open the app.
+2. Wait for the CRT-style loading screen.
+3. Start or continue training.
+4. Read the mission.
+5. Write Python code.
+6. Run the code.
+7. Receive feedback from Mompy.
+8. Complete the mission and unlock the next one.
 
 ---
 
-## Current Features
+## Visual identity
 
-- CRT-style interface
-- Start screen
+Mompy uses a retro-futuristic visual style inspired by old terminals, CRT monitors, and industrial control panels.
+
+Main characteristics:
+
+- dark industrial interface;
+- green CRT glow;
+- terminal-style typography;
+- pixel/scanline effects;
+- metallic panels;
+- retro monitor mascot;
+- old-computer atmosphere.
+
+---
+
+## Current features
+
+- Retro CRT interface
 - Loading screen
+- Start screen
 - Mission screen
 - Code editor area
 - Output panel
@@ -77,29 +80,28 @@ The goal is to make Mompy feel like an old intelligent training terminal.
 - Back button
 - Settings modal
 - Local user profile
-- Mission completion flow
+- Local progress planning
 - Mompy mascot states
+- Mission completion flow
 - Audio system planning
-- Progress system planning
 - Electron desktop packaging planning
 
 ---
 
-## Planned Features
+## Planned features
 
-### Learning System
+### Learning system
 
 - Python beginner missions
 - Step-by-step challenges
 - Mission validation
+- Mission hints
 - Mission progress
-- Hints per mission
-- Completion flow
 - Repeat mission
 - Next mission
 - Level system
 
-### Mompy Character
+### Mompy character
 
 - Idle state
 - Talking animation
@@ -116,20 +118,20 @@ The goal is to make Mompy feel like an old intelligent training terminal.
 - Success sound
 - Error sound
 - CRT shutdown sound
-- Calm CRT ambient sound for the start screen only
+- Calm CRT ambient sound for the start screen
 
-### User Profile
+### User profile
 
 - First-name setup
 - Local profile
-- Local settings
 - Language preference
+- Audio settings
 - Progress reset
 - Future optional cloud sync
 
-### Desktop App
+### Desktop app
 
-- Electron desktop app
+- Electron app
 - Windows `.exe`
 - Local-first storage
 - GitHub Releases
@@ -137,31 +139,27 @@ The goal is to make Mompy feel like an old intelligent training terminal.
 
 ---
 
-## Local-First Philosophy
+## Local-first philosophy
 
 Mompy is designed to work without requiring an online account.
 
-For the first version, the following data should be stored locally:
+For the first version, the following data should stay on the user's computer:
 
-- User first name
-- Language preference
-- Current mission
-- Completed missions
-- Audio settings
-- Interface settings
-- Progress state
+- first name;
+- language preference;
+- current mission;
+- completed missions;
+- audio settings;
+- interface settings;
+- progress state.
 
-This keeps the app simple, private, and usable offline.
-
-Cloud sync, login, and online accounts may be added later, but they are not required for the first desktop version.
+No server, password, or cloud account is required for the first desktop version.
 
 ---
 
-## Desktop App
+## Desktop app
 
-Mompy is being developed with web technologies, but the final goal is to make it feel like a real installed application.
-
-Planned path:
+Mompy is being built with web technologies, but the final goal is to make it feel like a real installed desktop app.
 
 ```txt
 HTML + CSS + JavaScript
@@ -181,7 +179,7 @@ GitHub Releases = app installer downloads
 
 ---
 
-## Technology Stack
+## Technology stack
 
 Current / planned stack:
 
@@ -206,7 +204,7 @@ Possible future additions:
 
 ---
 
-## Project Structure
+## Project structure
 
 Planned structure:
 
@@ -221,6 +219,7 @@ mompy/
       images/
       audio/
       icons/
+      branding/
 
   electron/
     main.js
@@ -288,7 +287,7 @@ Users will be able to download the installer without touching the source code.
 
 ---
 
-## Audio Files
+## Audio files
 
 Expected audio files:
 
@@ -310,40 +309,6 @@ Audio behavior:
 - Correct answer: success sound
 - Wrong answer: error sound
 - CRT shutdown animation: shutdown sound
-
----
-
-## User Profile
-
-Mompy should not use a hardcoded user name.
-
-On first launch, the user should enter at least:
-
-- First name
-
-Optional future profile fields:
-
-- Language
-- Level preference
-- Email for future sync
-
-For now, the profile is stored locally.
-
----
-
-## Privacy
-
-Mompy is planned as a local-first app.
-
-In the first version:
-
-- No server is required
-- No online login is required
-- No password is required
-- No cloud sync is required
-- Progress is stored locally on the user's computer
-
-If online features are added in the future, they should be optional and clearly explained.
 
 ---
 
@@ -391,7 +356,7 @@ Configure Electron, prepare the Windows desktop app, organize the repository, an
 
 ---
 
-## Test Checklist
+## Test checklist
 
 Before release:
 
@@ -402,7 +367,7 @@ Before release:
 - [ ] Loading has no sound
 - [ ] Loading transitions to start screen
 
-### Start Screen
+### Start screen
 
 - [ ] Start button works
 - [ ] Continue button works
@@ -411,7 +376,7 @@ Before release:
 - [ ] Missions completed count appears correctly
 - [ ] Ambient sound works only here
 
-### Mission Screen
+### Mission screen
 
 - [ ] Run button works
 - [ ] Correct code completes mission
@@ -421,33 +386,13 @@ Before release:
 - [ ] Output updates correctly
 - [ ] Mompy reacts correctly
 
-### Completion Flow
+### Completion flow
 
 - [ ] Mission completed message appears on Mompy screen
 - [ ] Back, Help, and Run disable after completion
 - [ ] Repeat works
 - [ ] Next Mission works
 - [ ] Settings and Exit still work
-
-### Settings
-
-- [ ] Settings modal opens
-- [ ] Esc closes modal
-- [ ] Audio settings save
-- [ ] Progress reset asks confirmation
-- [ ] Profile editing works
-- [ ] Language preference is saved
-
-### Audio
-
-- [ ] click.wav works
-- [ ] run.wav works
-- [ ] success.wav works
-- [ ] error.wav works
-- [ ] shutdown.wav works
-- [ ] ambient loop works
-- [ ] volume controls work
-- [ ] audio preferences save
 
 ### GitHub
 
@@ -461,7 +406,7 @@ Before release:
 
 ---
 
-## Git Workflow
+## Git workflow
 
 Recommended workflow:
 
@@ -501,7 +446,7 @@ out/
 
 ---
 
-## Official Website
+## Official website
 
 Planned official website:
 
@@ -511,28 +456,30 @@ mompy.com.br
 
 The website can be used for:
 
-- Project presentation
-- Screenshots
-- Download button
-- GitHub link
-- Release notes
-- Future documentation
+- project presentation;
+- screenshots;
+- download button;
+- GitHub link;
+- release notes;
+- future documentation.
 
 ---
 
 ## Português
 
-**Mompy** é um console retrô de treinamento em Python, criado para ajudar iniciantes a aprender programação por meio de pequenas missões interativas.
+**Mompy** é um aplicativo retrô de treinamento em Python, criado para ajudar iniciantes a aprender programação por meio de pequenas missões interativas.
+
+Ele funciona como um console antigo de treinamento: o usuário lê uma missão, escreve código, executa, recebe feedback e avança para a próxima etapa.
 
 A ideia é unir:
 
-- Visual de computador antigo
-- Interface CRT verde
-- Mascote amigável
-- Missões de Python
-- Feedback visual e sonoro
-- Progresso salvo localmente
-- Aplicativo instalável para Windows
+- visual de computador antigo;
+- interface CRT verde;
+- mascote amigável;
+- missões de Python;
+- feedback visual e sonoro;
+- progresso salvo localmente;
+- aplicativo instalável para Windows.
 
 O objetivo é fazer o aprendizado de programação parecer mais divertido, focado e memorável.
 
@@ -550,7 +497,7 @@ github.com/macksonvictor
 
 ---
 
-## Project Status
+## Project status
 
 Mompy is currently in active development.
 

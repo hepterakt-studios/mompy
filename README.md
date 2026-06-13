@@ -9,7 +9,7 @@
 [![HTML CSS JS](https://img.shields.io/badge/HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#-technology-stack)
 [![Electron](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#-desktop-app)
 [![Python](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#-what-mompy-does)
-[![Discord](https://img.shields.io/badge/Discord-coming%20soon-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#-questions-problems-suggestions)
+[![Discord](https://img.shields.io/badge/Discord-coming%20soon-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#-community)
 [![Issues](https://img.shields.io/github/issues/macksonvictor/mompy?style=for-the-badge&logo=github)](https://github.com/macksonvictor/mompy/issues)
 [![Stars](https://img.shields.io/github/stars/macksonvictor/mompy?style=for-the-badge&logo=github)](https://github.com/macksonvictor/mompy/stargazers)
 
@@ -18,21 +18,25 @@
 **Mompy** is a retro CRT-style desktop app that helps beginners learn Python through guided missions, instant feedback, local progress, sound effects, and a friendly monitor mascot.
 
 > [!NOTE]
-> Mompy is in active development. The repository is public, and the first downloadable desktop builds are being prepared.
+> Mompy is in active development. Source code is available now, and the first downloadable desktop builds will be published through GitHub Releases.
 
 ---
 
-## ⚡ Quick links
+## 📦 Download and source
 
-| Resource | Status | Link |
+- **Source code:** [github.com/macksonvictor/mompy](https://github.com/macksonvictor/mompy)
+- **Desktop builds:** [GitHub Releases](https://github.com/macksonvictor/mompy/releases)
+- **Official website:** [mompy.co](https://mompy.co)
+- **Issues and feedback:** [GitHub Issues](https://github.com/macksonvictor/mompy/issues)
+
+Mompy is being prepared as a cross-platform desktop app. Each operating system may have its own package when releases are available.
+
+| Platform | Package | Status |
 | --- | --- | --- |
-| Source code | Available | [GitHub Repository](https://github.com/macksonvictor/mompy) |
-| Desktop downloads | Planned | [GitHub Releases](https://github.com/macksonvictor/mompy/releases) |
-| Official website | Planned | [mompy.co](https://mompy.co) |
-| Issues / feedback | Available | [GitHub Issues](https://github.com/macksonvictor/mompy/issues) |
-| Code of Conduct | Available | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) |
-| Contributing | Available | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| Security | Available | [SECURITY.md](SECURITY.md) |
+| Windows | installer / executable | Planned |
+| macOS | disk image package | Planned |
+| Linux | portable Linux package | Planned |
+| Web preview | browser preview or documentation page | Possible later |
 
 ---
 
@@ -97,21 +101,6 @@ Mompy should feel like an old intelligent training machine, not a normal website
 
 ---
 
-## 📦 Download options
-
-Mompy is planned to be distributed as a desktop app through GitHub Releases.
-
-| Platform | Package | Status |
-| --- | --- | --- |
-| Windows | installer / executable | Planned |
-| macOS | disk image package | Planned |
-| Linux | portable Linux package | Planned |
-| Web preview | Browser preview or documentation page | Possible later |
-
-The repository contains the source code. Generated builds and installers should be published through **GitHub Releases**, not committed into the main codebase.
-
----
-
 ## 🧭 Feature status
 
 | Area | Status |
@@ -137,7 +126,7 @@ The repository contains the source code. Generated builds and installers should 
 
 ## 🚀 Roadmap
 
-This roadmap is public-facing. Internal development phases are intentionally not listed here to keep the README clean.
+This is the public roadmap. It avoids internal phase notes and focuses only on the product direction.
 
 | Stage | Focus |
 | --- | --- |
@@ -189,7 +178,7 @@ GitHub Releases = app downloads
 
 ## 🌍 Platform strategy
 
-Mompy should not be described as Windows-only.
+Mompy should be cross-platform, not Windows-only.
 
 | Platform | Status |
 | --- | --- |
@@ -313,23 +302,6 @@ Installers and packaged builds should be published later through **GitHub Releas
 
 ---
 
-## 🧪 Test checklist
-
-Before a public release:
-
-- [ ] Loading screen appears and transitions correctly.
-- [ ] Start and Continue work.
-- [ ] Local user profile loads correctly.
-- [ ] Mission screen validates code correctly.
-- [ ] Output updates correctly.
-- [ ] Mompy reacts correctly.
-- [ ] Audio behavior is correct per screen.
-- [ ] Progress is saved locally.
-- [ ] Build folders are not committed.
-- [ ] README and project files are updated.
-
----
-
 ## 🔊 Audio files
 
 Expected audio files:
@@ -355,6 +327,23 @@ Audio behavior:
 
 ---
 
+## 🧪 Test checklist
+
+Before a public release:
+
+- [ ] Loading screen appears and transitions correctly.
+- [ ] Start and Continue work.
+- [ ] Local user profile loads correctly.
+- [ ] Mission screen validates code correctly.
+- [ ] Output updates correctly.
+- [ ] Mompy reacts correctly.
+- [ ] Audio behavior is correct per screen.
+- [ ] Progress is saved locally.
+- [ ] Build folders are not committed.
+- [ ] README and project files are updated.
+
+---
+
 ## 🌐 Official website
 
 Planned official website:
@@ -369,9 +358,17 @@ The website can be used for project presentation, screenshots, downloads, releas
 
 ## 🤔 Questions? Problems? Suggestions?
 
-- Report bugs or request features through [GitHub Issues](https://github.com/macksonvictor/mompy/issues).
-- Check existing issues before creating a new one.
-- Discord community: **coming soon**.
+Report bugs, request features, or suggest improvements through [GitHub Issues](https://github.com/macksonvictor/mompy/issues).
+
+Security reports should follow the [Security Policy](SECURITY.md).
+
+---
+
+## 💬 Community
+
+Discord community: **coming soon**.
+
+A public invite link will be added when the community server is ready.
 
 ---
 
@@ -386,16 +383,12 @@ The website can be used for project presentation, screenshots, downloads, releas
 
 ---
 
-## ⭐ Stars stats
+## ⭐ Stars
 
 <p align="center">
-<a href="https://star-history.com/#macksonvictor/mompy&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
-    <img alt="Mompy Star History Chart" src="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
-  </picture>
-</a>
+  <a href="https://github.com/macksonvictor/mompy/stargazers">
+    <img src="https://img.shields.io/github/stars/macksonvictor/mompy?style=for-the-badge&logo=github&label=Stars" alt="Mompy stars">
+  </a>
 </p>
 
 ---
@@ -405,6 +398,15 @@ The website can be used for project presentation, screenshots, downloads, releas
 <a href="https://github.com/macksonvictor/mompy/graphs/contributors" alt="View Contributors">
   <img src="https://contrib.rocks/image?repo=macksonvictor/mompy&max=1000&columns=10" alt="Mompy contributors" />
 </a>
+
+---
+
+## 📚 Project standards
+
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Contributing Guide](CONTRIBUTING.md)
+- [Security Policy](SECURITY.md)
+- [License](LICENSE)
 
 ---
 
@@ -426,6 +428,6 @@ This repository may change frequently while the interface, mission system, audio
 
 ## 📄 License
 
-License not defined yet.
+Mompy is not currently released under an open-source license.
 
 Until a license is chosen, all rights are reserved by the author.

@@ -9,10 +9,8 @@
 [![Built with](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#technology-stack)
 [![Desktop](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#desktop-app)
 [![Python Training](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#what-mompy-does)
-
-<!-- Future community badge:
-[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YOUR_INVITE)
--->
+[![Discord](https://img.shields.io/badge/Discord-coming%20soon-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#community)
+[![Stars](https://img.shields.io/github/stars/macksonvictor/mompy?style=for-the-badge&logo=github)](https://github.com/macksonvictor/mompy/stargazers)
 
 [English](https://zdoc.app/en/macksonvictor/mompy) | [Português](https://zdoc.app/pt/macksonvictor/mompy)
 
@@ -90,11 +88,11 @@ The repository should contain the source code. Generated builds and installers s
 
 ---
 
-## Main app areas
+## App experience
 
 ### Loading screen
 
-The app starts with a CRT-style loading screen that feels like an old training terminal turning on.
+Mompy starts with a CRT-style loading screen that feels like an old training terminal turning on.
 
 Expected behavior:
 
@@ -198,56 +196,15 @@ Mompy should feel like an old intelligent training machine, not a normal website
 
 ---
 
-## Planned features
+## Roadmap
 
-### Learning system
+This roadmap is public-facing. Internal development phases are intentionally not listed here to keep the README clean.
 
-- Python beginner missions
-- Step-by-step challenges
-- Mission validation
-- Mission hints
-- Mission progress
-- Repeat mission
-- Next mission
-- Level system
-
-### Mompy character
-
-- Idle state
-- Talking animation
-- Happy state
-- Sad/error state
-- CRT shutdown animation
-- Terminal animation on the start screen
-- Mission completion messages inside Mompy's screen
-
-### Audio
-
-- Button click sound
-- Run sound
-- Success sound
-- Error sound
-- CRT shutdown sound
-- Calm CRT ambient sound for the start screen
-
-### User profile
-
-- First-name setup
-- Local profile
-- Language preference
-- Audio settings
-- Progress reset
-- Future optional cloud sync
-
-### Desktop app
-
-- Electron app
-- Windows build
-- macOS build
-- Linux build
-- Local-first storage
-- GitHub Releases
-- Official website/download page
+| Stage | Focus |
+| --- | --- |
+| Now | Finish the core UI, mission flow, local profile, progress system, audio, and mascot behavior. |
+| Next | Package Mompy as a desktop app and prepare first test builds for Windows, macOS, and Linux. |
+| Later | Publish releases, create the official website, expand missions, add documentation, and open community channels. |
 
 ---
 
@@ -495,108 +452,6 @@ Audio behavior:
 
 ---
 
-## Roadmap
-
-### Phase 1 — Main Layout
-
-Fix the main mission screen layout, alignment, panels, editor, output, and top bar.
-
-### Phase 2 — Buttons
-
-Add and organize Settings, Exit, Back, Help, and Run buttons.
-
-### Phase 3 — Button Functions
-
-Implement modals, shortcuts, confirmation dialogs, and mission completion behavior.
-
-### Phase 4 — Start Screen
-
-Create the entry screen with Mompy, Start, Continue, user information, level, and missions completed.
-
-### Phase 5 — Loading Screen
-
-Create the CRT-style loading screen with Mompy and a real animated progress bar.
-
-### Phase 6 — Mompy Animations
-
-Implement Mompy states, talking animation, happy/sad states, terminal animation, and CRT shutdown interaction.
-
-### Phase 7 — Audio
-
-Implement sound effects and ambient sound behavior.
-
-### Phase 8 — Progress and Missions
-
-Implement local mission data, validation, progress saving, Start, Continue, Reset Progress, and level updates.
-
-### Phase 9 — Polish and Testing
-
-Fix bugs, improve alignment, test screens, test audio, test progress, and create a test checklist.
-
-### Phase 10 — Desktop App and GitHub
-
-Configure Electron, prepare desktop packaging, organize the repository, and push the project to GitHub.
-
----
-
-## Test checklist
-
-Before release:
-
-### Loading
-
-- [ ] Loading screen appears
-- [ ] Loading progress works
-- [ ] Loading has no sound
-- [ ] Loading transitions to start screen
-
-### Start screen
-
-- [ ] Start button works
-- [ ] Continue button works
-- [ ] User name is loaded from local profile
-- [ ] Level appears correctly
-- [ ] Missions completed count appears correctly
-- [ ] Ambient sound works only here
-
-### Mission screen
-
-- [ ] Run button works
-- [ ] Correct code completes mission
-- [ ] Wrong code shows hint
-- [ ] Help opens mission help
-- [ ] Back asks confirmation
-- [ ] Output updates correctly
-- [ ] Mompy reacts correctly
-
-### Completion flow
-
-- [ ] Mission completed message appears on Mompy screen
-- [ ] Back, Help, and Run disable after completion
-- [ ] Repeat works
-- [ ] Next Mission works
-- [ ] Settings and Exit still work
-
-### Settings
-
-- [ ] Settings modal opens
-- [ ] Audio settings save
-- [ ] Profile editing works
-- [ ] Progress reset asks confirmation
-- [ ] Language preference is saved
-
-### GitHub
-
-- [ ] `.gitignore` exists
-- [ ] `node_modules` is not committed
-- [ ] Build folders are not committed
-- [ ] README is updated
-- [ ] Project pushes correctly
-- [ ] Main branch is stable
-- [ ] Dev branch is used for changes
-
----
-
 ## Git workflow
 
 Recommended workflow:
@@ -669,7 +524,7 @@ Planned community channels:
 - GitHub Issues for bugs and feature requests;
 - GitHub Discussions for ideas and questions, if enabled later.
 
-Future Discord badge placeholder:
+When the Discord server is created, the top badge can be replaced with a real invite link:
 
 ```md
 [![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YOUR_INVITE)
@@ -680,13 +535,9 @@ Future Discord badge placeholder:
 ## Stars stats
 
 <p align="center">
-<a href="https://star-history.com/#macksonvictor/mompy">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
-    <img alt="Mompy Star History Chart" src="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
-  </picture>
-</a>
+  <a href="https://starchart.cc/macksonvictor/mompy">
+    <img alt="Mompy Star History Chart" src="https://starchart.cc/macksonvictor/mompy.svg?variant=adaptive" />
+  </a>
 </p>
 
 ---

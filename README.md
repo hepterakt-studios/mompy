@@ -1,12 +1,8 @@
-# Mompy: Learn Python with a Retro Training Console
-
-<!--
-Future cover image:
-
 <p align="center">
-  <img src="assets/branding/mompy-cover.png" alt="Mompy retro monitor" width="360">
+  <img src="assets/branding/mompy-cover.svg" alt="Mompy retro monitor cover" width="420">
 </p>
--->
+
+# Mompy: Learn Python with a Retro Training Console
 
 [![Status](https://img.shields.io/badge/status-in%20development-8cff3a?style=for-the-badge)](#project-status)
 [![Platform](https://img.shields.io/badge/platform-Windows-0b5fff?style=for-the-badge&logo=windows&logoColor=white)](#desktop-app)

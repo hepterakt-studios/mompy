@@ -4,12 +4,13 @@
 
 # Mompy: Learn Python with a Retro Training Console
 
-[![Status](https://img.shields.io/badge/status-in%20development-8cff3a?style=for-the-badge)](#project-status)
-[![Platform](https://img.shields.io/badge/platform-cross--platform-6f42c1?style=for-the-badge)](#platform-strategy)
-[![Built with](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#technology-stack)
-[![Desktop](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#desktop-app)
-[![Python Training](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#what-mompy-does)
-[![Discord](https://img.shields.io/badge/Discord-coming%20soon-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#community)
+[![Status](https://img.shields.io/badge/status-in%20development-8cff3a?style=for-the-badge)](#-project-status)
+[![Platform](https://img.shields.io/badge/platform-cross--platform-6f42c1?style=for-the-badge)](#-platform-strategy)
+[![HTML CSS JS](https://img.shields.io/badge/HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](#-technology-stack)
+[![Electron](https://img.shields.io/badge/desktop-Electron-47848f?style=for-the-badge&logo=electron&logoColor=white)](#-desktop-app)
+[![Python](https://img.shields.io/badge/python-training-3776ab?style=for-the-badge&logo=python&logoColor=white)](#-what-mompy-does)
+[![Discord](https://img.shields.io/badge/Discord-coming%20soon-5865F2?style=for-the-badge&logo=discord&logoColor=white)](#-questions-problems-suggestions)
+[![Issues](https://img.shields.io/github/issues/macksonvictor/mompy?style=for-the-badge&logo=github)](https://github.com/macksonvictor/mompy/issues)
 [![Stars](https://img.shields.io/github/stars/macksonvictor/mompy?style=for-the-badge&logo=github)](https://github.com/macksonvictor/mompy/stargazers)
 
 [English](https://zdoc.app/en/macksonvictor/mompy) | [Português](https://zdoc.app/pt/macksonvictor/mompy)
@@ -17,24 +18,25 @@
 **Mompy** is a retro CRT-style desktop app that helps beginners learn Python through guided missions, instant feedback, local progress, sound effects, and a friendly monitor mascot.
 
 > [!NOTE]
-> Mompy is currently in active development. The source code is public, but the first downloadable desktop releases are still being prepared.
+> Mompy is in active development. The repository is public, and the first downloadable desktop builds are being prepared.
 
 ---
 
-## Quick links
+## ⚡ Quick links
 
 | Resource | Status | Link |
 | --- | --- | --- |
 | Source code | Available | [GitHub Repository](https://github.com/macksonvictor/mompy) |
 | Desktop downloads | Planned | [GitHub Releases](https://github.com/macksonvictor/mompy/releases) |
 | Official website | Planned | [mompy.co](https://mompy.co) |
-| Documentation | Planned | Coming soon |
-| Discord community | Planned | Coming soon |
 | Issues / feedback | Available | [GitHub Issues](https://github.com/macksonvictor/mompy/issues) |
+| Code of Conduct | Available | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) |
+| Contributing | Available | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Security | Available | [SECURITY.md](SECURITY.md) |
 
 ---
 
-## What Mompy does
+## 🧠 What Mompy does
 
 Mompy turns beginner Python practice into small interactive missions.
 
@@ -52,30 +54,7 @@ The goal is simple: **open Mompy, complete missions, learn Python, and keep prog
 
 ---
 
-## Download options
-
-Mompy is planned to be distributed as a desktop app through GitHub Releases.
-
-| Platform | Package | Status |
-| --- | --- | --- |
-| Windows | `.exe` / installer | Planned |
-| macOS | `.dmg` | Planned |
-| Linux | `.AppImage` or another Linux package | Planned |
-| Web preview | Browser-based preview or documentation page | Possible later |
-
-Example future release assets:
-
-```txt
-Mompy-Setup-Windows.exe
-Mompy-macOS.dmg
-Mompy-Linux.AppImage
-```
-
-The repository should contain the source code. Generated builds and installers should be published through **GitHub Releases**, not committed into the main codebase.
-
----
-
-## Core learning loop
+## 🧩 Core learning loop
 
 1. Open the app.
 2. Wait for the CRT-style loading screen.
@@ -88,73 +67,19 @@ The repository should contain the source code. Generated builds and installers s
 
 ---
 
-## App experience
+## 🖥️ App experience
 
-### Loading screen
-
-Mompy starts with a CRT-style loading screen that feels like an old training terminal turning on.
-
-Expected behavior:
-
-- show Mompy branding;
-- animate a real loading bar;
-- avoid sound during loading;
-- transition cleanly to the start screen.
-
-### Start screen
-
-The start screen is the user entry point.
-
-Expected behavior:
-
-- show Mompy monitor/mascot;
-- show `START` and `CONTINUE` actions;
-- display local user data;
-- show level and completed missions;
-- play only the calm CRT ambient sound.
-
-### Mission screen
-
-The mission screen is where learning happens.
-
-Expected behavior:
-
-- show the mission objective;
-- provide a code editor area;
-- provide output feedback;
-- offer Help, Back, Run, Settings, and Exit controls;
-- validate the answer;
-- update Mompy's state based on success or error.
-
-### Completion flow
-
-When a mission is completed, Mompy should react and ask the user what to do next.
-
-Expected behavior:
-
-- show success feedback;
-- change Mompy to a happy state;
-- display completion text inside Mompy's screen;
-- allow `REPEAT`;
-- allow `NEXT MISSION`;
-- prevent accidental auto-advance.
-
-### Settings
-
-Settings should control the local experience without requiring an online account.
-
-Expected behavior:
-
-- audio on/off;
-- music volume;
-- sound effects volume;
-- language preference;
-- local profile editing;
-- progress reset with confirmation.
+| Area | Purpose |
+| --- | --- |
+| Loading screen | CRT-style boot sequence with a real loading bar and no sound. |
+| Start screen | Entry point with Start, Continue, local profile, level, and mission count. |
+| Mission screen | Main learning area with objective, code editor, output, and controls. |
+| Completion flow | Mompy reacts, shows success, and lets the user repeat or continue. |
+| Settings | Local profile, language, audio controls, and progress reset. |
 
 ---
 
-## Visual identity
+## 🎨 Visual identity
 
 Mompy uses a retro-futuristic visual style inspired by old terminals, CRT monitors, and industrial control panels.
 
@@ -172,7 +97,22 @@ Mompy should feel like an old intelligent training machine, not a normal website
 
 ---
 
-## Feature status
+## 📦 Download options
+
+Mompy is planned to be distributed as a desktop app through GitHub Releases.
+
+| Platform | Package | Status |
+| --- | --- | --- |
+| Windows | installer / executable | Planned |
+| macOS | disk image package | Planned |
+| Linux | portable Linux package | Planned |
+| Web preview | Browser preview or documentation page | Possible later |
+
+The repository contains the source code. Generated builds and installers should be published through **GitHub Releases**, not committed into the main codebase.
+
+---
+
+## 🧭 Feature status
 
 | Area | Status |
 | --- | --- |
@@ -180,8 +120,7 @@ Mompy should feel like an old intelligent training machine, not a normal website
 | Loading screen | In development |
 | Start screen | In development |
 | Mission screen | In development |
-| Code editor area | In development |
-| Output panel | In development |
+| Code editor and output | In development |
 | Help / Run / Back buttons | In development |
 | Settings modal | In development |
 | Local user profile | Planned / in progress |
@@ -196,7 +135,7 @@ Mompy should feel like an old intelligent training machine, not a normal website
 
 ---
 
-## Roadmap
+## 🚀 Roadmap
 
 This roadmap is public-facing. Internal development phases are intentionally not listed here to keep the README clean.
 
@@ -208,7 +147,7 @@ This roadmap is public-facing. Internal development phases are intentionally not
 
 ---
 
-## Local-first philosophy
+## 🔒 Local-first philosophy
 
 Mompy is designed to work without requiring an online account.
 
@@ -222,13 +161,11 @@ For the first version, the following data should stay on the user's computer:
 - interface settings;
 - progress state.
 
-No server, password, or cloud account is required for the first desktop version.
-
 Future online features may exist, but they should be optional.
 
 ---
 
-## Desktop app
+## 💻 Desktop app
 
 Mompy is being built with web technologies, but the final goal is to make it feel like a real installed desktop app.
 
@@ -250,11 +187,9 @@ GitHub Releases = app downloads
 
 ---
 
-## Platform strategy
+## 🌍 Platform strategy
 
 Mompy should not be described as Windows-only.
-
-The project can start with one platform during early testing, but the long-term direction is:
 
 | Platform | Status |
 | --- | --- |
@@ -267,22 +202,16 @@ Each operating system may need its own build/package later. GitHub Releases can 
 
 ---
 
-## System requirements
+## 🧰 Requirements
 
 ### For users
-
-The first public releases are planned for desktop computers.
-
-Expected requirements:
 
 - Windows, macOS, or Linux depending on the release package;
 - keyboard and mouse;
 - enough storage for a small desktop app;
-- no required online account.
+- no required online account for the first version.
 
 ### For developers
-
-To run or package the project locally, the recommended tools are:
 
 - Git;
 - Node.js;
@@ -292,32 +221,28 @@ To run or package the project locally, the recommended tools are:
 
 ---
 
-## Technology stack
+## 🛠️ Technology stack
 
-Current / planned stack:
-
-- HTML
-- CSS
-- JavaScript
-- LocalStorage
-- Electron
-- Electron Builder
-- Git
-- GitHub
-- GitHub Releases
+- HTML;
+- CSS;
+- JavaScript;
+- LocalStorage;
+- Electron;
+- Electron Builder;
+- Git;
+- GitHub;
+- GitHub Releases.
 
 Possible future additions:
 
-- Node.js helpers
-- Local file storage
-- Cloud sync
-- Online accounts
-- Mission editor
-- AI-assisted hints
+- local file storage;
+- cloud sync;
+- mission editor;
+- AI-assisted hints.
 
 ---
 
-## Project structure
+## 📁 Project structure
 
 Planned structure:
 
@@ -327,27 +252,22 @@ mompy/
     index.html
     styles.css
     main.js
-
     assets/
       images/
       audio/
       icons/
       branding/
-
   electron/
     main.js
     preload.js
-
   README.md
   package.json
   .gitignore
 ```
 
-The structure may change while the project is still in development.
-
 ---
 
-## Development
+## ⚙️ Development
 
 Clone the repository:
 
@@ -379,7 +299,7 @@ npm start
 
 ---
 
-## Build
+## 🏗️ Build
 
 When Electron is configured, the app should be built with:
 
@@ -387,47 +307,30 @@ When Electron is configured, the app should be built with:
 npm run build
 ```
 
-The generated installer or executable should not be committed directly into the repository.
-
-Do not commit:
-
-```txt
-node_modules/
-dist/
-build/
-release/
-out/
-.env
-*.exe
-*.dmg
-*.AppImage
-*.log
-```
+Do not commit generated builds, dependency folders, installers, temporary files, or local environment files.
 
 Installers and packaged builds should be published later through **GitHub Releases**.
 
 ---
 
-## Release model
+## 🧪 Test checklist
 
-The repository contains the source code.
+Before a public release:
 
-GitHub Releases will be used for downloadable versions of the app.
-
-Example future release:
-
-```txt
-Mompy v1.0.0
-Mompy-Setup-Windows.exe
-Mompy-macOS.dmg
-Mompy-Linux.AppImage
-```
-
-Users will be able to download the app without touching the source code.
+- [ ] Loading screen appears and transitions correctly.
+- [ ] Start and Continue work.
+- [ ] Local user profile loads correctly.
+- [ ] Mission screen validates code correctly.
+- [ ] Output updates correctly.
+- [ ] Mompy reacts correctly.
+- [ ] Audio behavior is correct per screen.
+- [ ] Progress is saved locally.
+- [ ] Build folders are not committed.
+- [ ] README and project files are updated.
 
 ---
 
-## Audio files
+## 🔊 Audio files
 
 Expected audio files:
 
@@ -442,44 +345,17 @@ assets/audio/mompy_crt_ambient_loop_minimal.wav
 
 Audio behavior:
 
-- Loading screen: no sound
-- Start screen: ambient sound only
-- Mission screen: sound effects only
-- Run: run sound
-- Correct answer: success sound
-- Wrong answer: error sound
-- CRT shutdown animation: shutdown sound
+- Loading screen: no sound;
+- Start screen: ambient sound only;
+- Mission screen: sound effects only;
+- Run: run sound;
+- Correct answer: success sound;
+- Wrong answer: error sound;
+- CRT shutdown animation: shutdown sound.
 
 ---
 
-## Git workflow
-
-Recommended workflow:
-
-```txt
-main = stable version
-dev = development version
-```
-
-Before major changes:
-
-```bash
-git add .
-git commit -m "Save current working version"
-git push
-```
-
-After a successful feature:
-
-```bash
-git add .
-git commit -m "Add Mompy audio system"
-git push
-```
-
----
-
-## Official website
+## 🌐 Official website
 
 Planned official website:
 
@@ -487,62 +363,44 @@ Planned official website:
 https://mompy.co
 ```
 
-The website can be used for:
-
-- project presentation;
-- screenshots;
-- download button;
-- GitHub link;
-- release notes;
-- future documentation.
+The website can be used for project presentation, screenshots, downloads, release notes, and documentation.
 
 ---
 
-## Related projects
+## 🤔 Questions? Problems? Suggestions?
 
-Mompy can grow into a small ecosystem over time.
+- Report bugs or request features through [GitHub Issues](https://github.com/macksonvictor/mompy/issues).
+- Check existing issues before creating a new one.
+- Discord community: **coming soon**.
+
+---
+
+## 🤝 Project ecosystem
 
 | Project | Status | Description |
 | --- | --- | --- |
 | **Mompy Desktop** | Current repository | The main retro Python training app. |
-| **Mompy Website** | Planned | Official website for downloads, screenshots, release notes, and documentation. |
-| **Mompy Missions** | Planned | A future mission/content area for Python lessons and challenge packs. |
+| **Mompy Website** | Planned | Official website for downloads, screenshots, releases, and documentation. |
+| **Mompy Missions** | Planned | Future Python lesson and challenge packs. |
 | **Mompy Docs** | Planned | Future documentation for users, developers, and contributors. |
 
-> [!NOTE]
-> Related projects will only be linked here when they exist. This section is prepared for future expansion without pretending that unfinished repositories already exist.
-
 ---
 
-## Community
-
-Mompy does not have an official community server yet, but this README is prepared for it.
-
-Planned community channels:
-
-- Discord server for announcements, feedback, and testing;
-- GitHub Issues for bugs and feature requests;
-- GitHub Discussions for ideas and questions, if enabled later.
-
-When the Discord server is created, the top badge can be replaced with a real invite link:
-
-```md
-[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YOUR_INVITE)
-```
-
----
-
-## Stars stats
+## ⭐ Stars stats
 
 <p align="center">
-  <a href="https://starchart.cc/macksonvictor/mompy">
-    <img alt="Mompy Star History Chart" src="https://starchart.cc/macksonvictor/mompy.svg?variant=adaptive" />
-  </a>
+<a href="https://star-history.com/#macksonvictor/mompy&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
+    <img alt="Mompy Star History Chart" src="https://api.star-history.com/svg?repos=macksonvictor/mompy&type=Date" />
+  </picture>
+</a>
 </p>
 
 ---
 
-## Contributors
+## ⚡ Contributors
 
 <a href="https://github.com/macksonvictor/mompy/graphs/contributors" alt="View Contributors">
   <img src="https://contrib.rocks/image?repo=macksonvictor/mompy&max=1000&columns=10" alt="Mompy contributors" />
@@ -550,19 +408,15 @@ When the Discord server is created, the top badge can be replaced with a real in
 
 ---
 
-## Author
+## 👤 Author
 
 Created by **Mackson Victor**.
 
-GitHub:
-
-```txt
-https://github.com/macksonvictor
-```
+GitHub: [macksonvictor](https://github.com/macksonvictor)
 
 ---
 
-## Project status
+## 📌 Project status
 
 Mompy is currently in active development.
 
@@ -570,7 +424,7 @@ This repository may change frequently while the interface, mission system, audio
 
 ---
 
-## License
+## 📄 License
 
 License not defined yet.
 

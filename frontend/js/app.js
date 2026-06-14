@@ -22,8 +22,6 @@ const PROGRESS_KEY = "mompy_progress_v1";
 const BRIEFING_PROGRESS_KEY = "mompy_briefing_progress_v1";
 const DEFAULT_USER_NAME = "Guest";
 const PLANNED_TOTAL_MISSIONS = 30;
-const BASE_MISSION_XP = 35;
-const MISSION_LEVEL_XP_STEP = 5;
 
 const defaultProgressState = {
   currentMissionIndex: 0,
@@ -55,9 +53,11 @@ let pythonBackendConnected = false;
 
 const PYTHON_HTTP_ROUTES = {
   get_bootstrap_state: { method: "GET", path: "/api/bootstrap" },
+  get_progress: { method: "GET", path: "/api/progress" },
   validate_mission: { method: "POST", path: "/api/validate", body: ([missionId, userCode]) => ({ mission_id: missionId, user_code: userCode }) },
   complete_mission: { method: "POST", path: "/api/complete", body: ([missionId]) => ({ mission_id: missionId }) },
   reset_progress: { method: "POST", path: "/api/reset", body: () => ({}) },
+  set_current_mission_index: { method: "POST", path: "/api/progress/current", body: ([missionIndex]) => ({ current_mission_index: missionIndex }) },
   save_profile: { method: "POST", path: "/api/profile/save", body: ([profile]) => ({ profile }) },
   logout_profile: { method: "POST", path: "/api/profile/logout", body: () => ({}) },
 };
@@ -114,6 +114,7 @@ function applyPythonProgress(progress) {
   const completedIds = progress.completed_mission_ids || progress.completedMissionIds;
   const missionIndex = progress.current_mission_index ?? progress.currentMissionIndex;
   const xp = progress.total_xp ?? progress.totalXp;
+  const levelInfo = progress.level_info || progress.levelInfo;
 
   if (Number.isInteger(missionIndex)) {
     currentMissionIndex = clampMissionIndex(missionIndex);
@@ -126,7 +127,11 @@ function applyPythonProgress(progress) {
   if (Number.isFinite(Number(xp))) {
     totalXp = Number(xp);
   } else {
-    totalXp = calculateXpFromCompletedMissions(completedMissionIds);
+    totalXp = 0;
+  }
+
+  if (levelInfo && typeof levelInfo === "object") {
+    backendLevelInfo = normalizePythonLevelInfo(levelInfo);
   }
 
   updateProgressUI();
@@ -645,6 +650,7 @@ const missions = [
 let currentMissionIndex = 0;
 let completedMissionIds = [];
 let totalXp = 0;
+let backendLevelInfo = null;
 let completedBriefingIds = [];
 let skippedBriefingIds = [];
 
@@ -1123,75 +1129,34 @@ function getCurrentMission() {
   return currentMission();
 }
 
-function xpRequiredForLevel(level) {
-  if (level <= 1) {
-    return 0;
-  }
-
-  return Math.floor(100 * Math.pow(level - 1, 1.6));
-}
-
-function getMissionXp(mission) {
-  return BASE_MISSION_XP + ((mission.level || 1) - 1) * MISSION_LEVEL_XP_STEP;
-}
-
-function calculateXpFromCompletedMissions(ids) {
-  const completedSet = new Set(ids);
-  return missions.reduce((sum, mission) => {
-    if (!completedSet.has(mission.id)) {
-      return sum;
-    }
-
-    return sum + getMissionXp(mission);
-  }, 0);
-}
-
-function getLevelTitle(level) {
-  if (level >= 100) {
-    return "Legend";
-  }
-
-  if (level >= 30) {
-    return "Expert";
-  }
-
-  if (level >= 15) {
-    return "Builder";
-  }
-
-  if (level >= 6) {
-    return "Apprentice";
-  }
-
-  if (level >= 2) {
-    return "Rookie";
-  }
-
-  return "Beginner";
-}
-
-function getUserLevelInfo(xp = totalXp) {
-  let level = 1;
-
-  while (level < 100 && xp >= xpRequiredForLevel(level + 1)) {
-    level += 1;
-  }
-
-  const currentLevelXp = xpRequiredForLevel(level);
-  const nextLevelXp = xpRequiredForLevel(level + 1);
-  const levelProgress = nextLevelXp === currentLevelXp
-    ? 100
-    : ((xp - currentLevelXp) / (nextLevelXp - currentLevelXp)) * 100;
+function normalizePythonLevelInfo(levelInfo) {
+  const level = Number(levelInfo.level) || 1;
+  const title = levelInfo.title || "Beginner";
+  const xpToNextLevel = Number(levelInfo.xp_to_next_level ?? levelInfo.xpToNextLevel ?? 0);
+  const progress = Number(levelInfo.progress);
 
   return {
     level,
-    title: getLevelTitle(level),
-    label: `${String(level).padStart(2, "0")} · ${getLevelTitle(level)}`,
-    currentLevelXp,
-    nextLevelXp,
-    xpIntoLevel: Math.max(0, xp - currentLevelXp),
-    xpToNextLevel: Math.max(0, nextLevelXp - xp),
-    progress: Math.min(100, Math.max(0, levelProgress)),
+    title,
+    label: levelInfo.label || `${String(level).padStart(2, "0")} · ${title}`,
+    currentLevelXp: Number(levelInfo.current_level_xp ?? levelInfo.currentLevelXp ?? 0),
+    nextLevelXp: Number(levelInfo.next_level_xp ?? levelInfo.nextLevelXp ?? 0),
+    xpIntoLevel: Number(levelInfo.xp_into_level ?? levelInfo.xpIntoLevel ?? 0),
+    xpToNextLevel,
+    progress: Number.isFinite(progress) ? Math.min(100, Math.max(0, progress)) : 0,
+  };
+}
+
+function getFallbackLevelInfo() {
+  return {
+    level: 1,
+    title: "Beginner",
+    label: "01 · Beginner",
+    currentLevelXp: 0,
+    nextLevelXp: 0,
+    xpIntoLevel: 0,
+    xpToNextLevel: 0,
+    progress: 4,
   };
 }
 
@@ -1270,6 +1235,7 @@ function loadProgress() {
       currentMissionIndex = defaultProgressState.currentMissionIndex;
       completedMissionIds = [...defaultProgressState.completedMissionIds];
       totalXp = defaultProgressState.totalXp;
+      backendLevelInfo = null;
       updateProgressUI();
       return { ...defaultProgressState };
     }
@@ -1277,7 +1243,8 @@ function loadProgress() {
     const progress = JSON.parse(rawProgress);
     currentMissionIndex = clampMissionIndex(progress.currentMissionIndex);
     completedMissionIds = sanitizeCompletedMissionIds(progress.completedMissionIds);
-    totalXp = calculateXpFromCompletedMissions(completedMissionIds);
+    totalXp = Number(progress.totalXp) || 0;
+    backendLevelInfo = null;
     updateProgressUI();
     return {
       currentMissionIndex,
@@ -1290,9 +1257,43 @@ function loadProgress() {
     currentMissionIndex = defaultProgressState.currentMissionIndex;
     completedMissionIds = [...defaultProgressState.completedMissionIds];
     totalXp = defaultProgressState.totalXp;
+    backendLevelInfo = null;
     updateProgressUI();
     return { ...defaultProgressState };
   }
+}
+
+function currentProgressPayload() {
+  return {
+    currentMissionIndex,
+    completedMissionIds: [...completedMissionIds],
+    totalXp,
+    lastUpdatedAt: new Date().toISOString(),
+  };
+}
+
+function saveLocalProgress(progress = currentProgressPayload()) {
+  try {
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+  } catch (error) {
+    console.warn(error);
+  }
+}
+
+async function syncCurrentMissionToPython() {
+  const progress = await callPythonBackend("set_current_mission_index", currentMissionIndex);
+  if (progress) {
+    applyPythonProgress(progress);
+  }
+  return progress;
+}
+
+async function refreshPythonProgress() {
+  const progress = await callPythonBackend("get_progress");
+  if (progress) {
+    applyPythonProgress(progress);
+  }
+  return progress;
 }
 
 function saveProgress() {
@@ -1303,20 +1304,21 @@ function saveProgress() {
     lastUpdatedAt: new Date().toISOString(),
   };
 
-  try {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
-  } catch (error) {
-    console.warn(error);
+  if (pythonBackendConnected) {
+    syncCurrentMissionToPython();
+  } else {
+    saveLocalProgress(progress);
   }
 
   updateProgressUI();
   return progress;
 }
 
-function resetProgress(options = {}) {
+async function resetProgress(options = {}) {
   currentMissionIndex = 0;
   completedMissionIds = [];
   totalXp = 0;
+  backendLevelInfo = null;
   missionCompleted = false;
   completionPending = false;
   clearTimeout(completionTimer);
@@ -1330,7 +1332,8 @@ function resetProgress(options = {}) {
   }
 
   updateProgressUI();
-  callPythonBackend("reset_progress").then(applyPythonProgress);
+  const pythonProgress = await callPythonBackend("reset_progress");
+  applyPythonProgress(pythonProgress);
 
   if (trainingStarted && !options.keepMissionView) {
     openMissionOrBriefing({
@@ -1341,6 +1344,10 @@ function resetProgress(options = {}) {
 }
 
 function hasSavedProgress() {
+  if (pythonBackendConnected && (completedMissionIds.length > 0 || currentMissionIndex > 0)) {
+    return true;
+  }
+
   try {
     return Boolean(localStorage.getItem(PROGRESS_KEY));
   } catch (error) {
@@ -1350,7 +1357,7 @@ function hasSavedProgress() {
 }
 
 function updateProgressUI() {
-  const levelInfo = getUserLevelInfo(totalXp);
+  const levelInfo = backendLevelInfo || getFallbackLevelInfo();
   currentUser.level = levelInfo.label;
   currentUser.levelNumber = levelInfo.level;
   currentUser.xp = totalXp;
@@ -2197,9 +2204,8 @@ function enterTraining() {
   editor.focus();
 }
 
-function startFreshTraining() {
-  resetProgress({ keepMissionView: true });
-  saveProgress();
+async function startFreshTraining() {
+  await resetProgress({ keepMissionView: true });
   enterTraining();
 }
 
@@ -2227,24 +2233,27 @@ function confirmStartOver() {
   });
 }
 
-function handleStart() {
+async function handleStart() {
   loadProgress();
   loadBriefingProgress();
+  await refreshPythonProgress();
 
   if (hasSavedProgress()) {
     confirmStartOver();
     return;
   }
 
-  startFreshTraining();
+  await startFreshTraining();
 }
 
-function handleContinue() {
+async function handleContinue() {
+  await refreshPythonProgress();
+
   if (hasSavedProgress()) {
     loadProgress();
+    await refreshPythonProgress();
   } else {
-    resetProgress({ keepMissionView: true });
-    saveProgress();
+    await resetProgress({ keepMissionView: true });
   }
 
   loadBriefingProgress();
@@ -2252,7 +2261,7 @@ function handleContinue() {
 }
 
 function updateLevelDisplay() {
-  const levelInfo = getUserLevelInfo(totalXp);
+  const levelInfo = backendLevelInfo || getFallbackLevelInfo();
   levelValue.textContent = String(levelInfo.level).padStart(2, "0");
   levelFill.style.width = `${Math.max(4, levelInfo.progress)}%`;
 }
@@ -2433,13 +2442,20 @@ function completeMission(result) {
   completionPending = true;
   const alreadyCompleted = completedMissionIds.includes(mission.id);
 
-  if (!alreadyCompleted) {
-    completedMissionIds.push(mission.id);
-    totalXp += getMissionXp(mission);
-  }
+  callPythonBackend("complete_mission", mission.id).then((progress) => {
+    if (progress) {
+      applyPythonProgress(progress);
+      return;
+    }
 
-  saveProgress();
-  callPythonBackend("complete_mission", mission.id).then(applyPythonProgress);
+    if (!alreadyCompleted) {
+      completedMissionIds.push(mission.id);
+      backendLevelInfo = null;
+    }
+
+    saveLocalProgress();
+    updateProgressUI();
+  });
   clearTimeout(completionTimer);
   setMissionActionsEnabled(false);
   clearMompyScreenMessage();

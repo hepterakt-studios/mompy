@@ -91,6 +91,13 @@ def serve_frontend(port: int = 8770) -> None:
                 if route == "/api/reset":
                     self.send_json(self.api.reset_progress())
                     return
+                if route == "/api/progress/current":
+                    self.send_json(
+                        self.api.set_current_mission_index(
+                            int(payload.get("current_mission_index", 0))
+                        )
+                    )
+                    return
                 if route == "/api/profile/save":
                     profile = payload.get("profile", {})
                     self.send_json(self.api.save_profile(profile if isinstance(profile, dict) else {}))

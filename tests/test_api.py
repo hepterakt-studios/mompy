@@ -28,12 +28,19 @@ class ApiTests(unittest.TestCase):
             state = api.get_bootstrap_state()
 
             self.assertTrue(state["backend"]["connected"])
-            self.assertEqual(state["backend"]["phase"], "10.5")
+            self.assertEqual(state["backend"]["phase"], "10.6")
             self.assertIn("profile", state)
             self.assertIn("progress", state)
             self.assertEqual(state["current_mission"]["id"], "mission_001")
             self.assertEqual(len(state["missions"]), 30)
             self.assertGreaterEqual(len(state["lessons"]), 6)
+
+    def test_api_can_store_current_mission_in_python_progress(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            api = MompyAPI(progress_path=Path(tmp) / "progress.json")
+            progress = api.set_current_mission_index(7)
+            self.assertEqual(progress["current_mission_index"], 7)
+            self.assertEqual(api.get_current_mission()["id"], "mission_008")
 
 
 if __name__ == "__main__":

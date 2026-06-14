@@ -9,7 +9,7 @@ from .code_runner import run_user_code_safely
 from .lessons import get_lessons
 from .missions import get_current_mission, get_mission, get_missions
 from .profile import load_profile, logout_profile, save_profile
-from .progress import complete_mission, load_progress, reset_progress
+from .progress import complete_mission, load_progress, reset_progress, set_current_mission_index
 from .validator import validate_mission
 
 
@@ -23,7 +23,7 @@ class MompyAPI:
         return {
             "backend": {
                 "name": "Mompy Python Backend",
-                "phase": "10.5",
+                "phase": "10.6",
                 "connected": True,
             },
             "profile": self.get_profile(),
@@ -83,6 +83,11 @@ class MompyAPI:
         if self.progress_path is None:
             return reset_progress()
         return reset_progress(self.progress_path)
+
+    def set_current_mission_index(self, index: int) -> dict:
+        if self.progress_path is None:
+            return set_current_mission_index(index)
+        return set_current_mission_index(index, self.progress_path)
 
     def run_user_code_safely(self, user_code: str) -> dict:
         return run_user_code_safely(user_code)

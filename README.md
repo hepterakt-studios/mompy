@@ -112,5 +112,5 @@ python -m unittest discover -s tests
 - 10.3: conectar frontend com backend Python usando pywebview.
 - 10.4: migrar validacao real das missoes para Python.
 - 10.5: execucao segura do codigo Python do usuario.
-- 10.6: progresso, XP e nivel 100% pelo backend Python.
+- 10.6: progresso, XP e nivel controlados pelo backend Python.
 - 10.7: empacotar app Python instalavel.

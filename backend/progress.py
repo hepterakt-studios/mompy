@@ -57,14 +57,31 @@ def _sanitize_progress(progress: dict | None) -> dict:
     return clean
 
 
+def _with_progress_metadata(progress: dict) -> dict:
+    enriched = dict(progress)
+    enriched["total_xp"] = sum(_mission_xp(mission_id) for mission_id in enriched["completed_mission_ids"])
+    enriched["missions_completed"] = len(enriched["completed_mission_ids"])
+    enriched["total_missions"] = PLANNED_TOTAL_MISSIONS
+    enriched["planned_total_missions"] = PLANNED_TOTAL_MISSIONS
+    enriched["level_info"] = calculate_level(enriched["total_xp"])
+    return enriched
+
+
 def load_progress(path: Path = PROGRESS_PATH) -> dict:
     progress = _sanitize_progress(read_json(path, default_progress()))
-    progress["level_info"] = calculate_level(progress["total_xp"])
-    return progress
+    return _with_progress_metadata(progress)
 
 
 def save_progress(progress: dict, path: Path = PROGRESS_PATH) -> None:
     write_json(path, _sanitize_progress(progress))
+
+
+def set_current_mission_index(index: int, path: Path = PROGRESS_PATH) -> dict:
+    progress = load_progress(path)
+    progress["current_mission_index"] = min(max(int(index), 0), max(0, len(MISSIONS) - 1))
+    progress["last_updated_at"] = _timestamp()
+    save_progress(progress, path)
+    return load_progress(path)
 
 
 def complete_mission(mission_id: str, path: Path = PROGRESS_PATH) -> dict:
@@ -76,8 +93,6 @@ def complete_mission(mission_id: str, path: Path = PROGRESS_PATH) -> dict:
     if mission_id not in completed:
         completed.append(mission_id)
 
-    mission_index = next(index for index, mission in enumerate(MISSIONS) if mission.id == mission_id)
-    progress["current_mission_index"] = min(mission_index + 1, len(MISSIONS) - 1)
     progress["total_xp"] = sum(_mission_xp(item) for item in completed)
     progress["last_updated_at"] = _timestamp()
     save_progress(progress, path)

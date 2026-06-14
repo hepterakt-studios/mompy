@@ -1,25 +1,25 @@
 <p align="center">
-  <img src="assets/branding/mompy-cover.webp" alt="Mompy retro CRT monitor preview" width="440">
+  <img src="assets/branding/mompy-cover.webp" alt="Mompy retro CRT monitor preview" width="460">
 </p>
 
 <h1 align="center">Mompy</h1>
 
 <p align="center">
-  <strong>Learn Python through a retro CRT training console.</strong>
+  <strong>A retro Python training app with guided lessons, coding missions, XP, and CRT-style feedback.</strong>
 </p>
 
 <p align="center">
-  Mompy is a local-first desktop learning app where beginners study Python through guided lessons, coding missions, feedback, progress, XP, and a friendly old-computer atmosphere.
+  Mompy helps beginners learn Python through short lessons, focused missions, instant validation, local progress, and a friendly old-computer interface.
 </p>
 
 <p align="center">
-  <a href="https://github.com/hepter-studios/mompy/releases">Download</a>
+  <a href="https://github.com/hepter-studios/mompy/releases"><strong>Download</strong></a>
   ·
-  <a href="https://mompy.co">Website</a>
+  <a href="https://mompy.co"><strong>Website</strong></a>
   ·
-  <a href="https://github.com/hepter-studios/mompy/issues">Issues</a>
+  <a href="https://github.com/hepter-studios/mompy/issues"><strong>Issues</strong></a>
   ·
-  <a href="#-run-from-source">Run from source</a>
+  <a href="#-run-from-source"><strong>Run from source</strong></a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@
   <img alt="Python" src="https://img.shields.io/badge/Python-learning-3776ab?style=for-the-badge&logo=python&logoColor=white">
   <img alt="Frontend" src="https://img.shields.io/badge/frontend-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black">
   <img alt="Backend" src="https://img.shields.io/badge/backend-Python-14354C?style=for-the-badge&logo=python&logoColor=white">
-  <a href="https://github.com/hepter-studios/mompy/issues"><img alt="Issues" src="https://img.shields.io/github/issues/hepter-studios/mompy?style=for-the-badge&logo=github"></a>
+  <img alt="Local first" src="https://img.shields.io/badge/local--first-no%20account-8cff3a?style=for-the-badge">
   <a href="https://github.com/hepter-studios/mompy/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/hepter-studios/mompy?style=for-the-badge&logo=github"></a>
 </p>
 
@@ -42,26 +42,36 @@
 
 ---
 
-## ✨ What is Mompy?
+## What is Mompy?
 
-Mompy is a retro-futuristic Python training app for beginners.
+Mompy is a **gamified desktop learning app for Python beginners**.
 
-Instead of starting with a boring editor, Mompy turns programming practice into a training terminal:
+Instead of starting with a plain editor, Mompy turns the first steps of programming into a training console:
 
-- short guided lessons before each mission block;
-- small Python missions for beginners;
-- instant feedback after running code;
-- local progress, XP, and level tracking;
+- guided lessons before each mission block;
+- beginner-friendly Python missions;
+- instant validation and feedback;
+- local profile, progress, XP, and level tracking;
 - CRT-style visuals, sound effects, and monitor reactions;
-- a local-first experience without requiring an online account.
+- local-first learning with no required online account.
 
 The goal is simple:
 
-> Open Mompy, learn the concept, complete the mission, and keep progressing.
+> Learn the concept, complete the mission, earn progress, and keep building.
 
 ---
 
-## 🧠 Learning flow
+## Why Mompy?
+
+Many beginners open a code editor and immediately feel lost.
+
+Mompy is designed to make the first programming experience feel guided, visual, and alive. It teaches before it tests, then asks the learner to solve small missions using the concept they just studied.
+
+Mompy should feel like an old training machine built to teach Python step by step.
+
+---
+
+## Learning flow
 
 ```txt
 Open Mompy
@@ -79,11 +89,28 @@ Feedback from Mompy
 Progress, XP, and next mission
 ```
 
-Mompy should teach before it tests. A mission should not require a concept that the lesson did not introduce first.
+A mission should not require a concept that the previous lesson did not introduce first.
 
 ---
 
-## 🕹️ App experience
+## First learning module
+
+The first public module focuses on Python fundamentals.
+
+| Missions | Topic | Concepts |
+| --- | --- | --- |
+| 1–5 | First commands | `print`, text, quotes, parentheses, output |
+| 6–10 | Variables and values | names, values, assignment, strings, numbers |
+| 11–15 | Decisions | `if`, `else`, comparisons, truth, indentation |
+| 16–20 | Repetition | `for`, `range`, loops, counters, indentation |
+| 21–25 | Lists | items, brackets, positions, iterating values |
+| 26–30 | Functions and final mission | `def`, calling functions, organization, review |
+
+Mission 30 is planned as a small final challenge that combines the fundamentals from the first module.
+
+---
+
+## App experience
 
 | Area | Purpose |
 | --- | --- |
@@ -96,7 +123,7 @@ Mompy should teach before it tests. A mission should not require a concept that 
 
 ---
 
-## 🎨 Visual identity
+## Visual identity
 
 Mompy uses a dark retro-computer style inspired by CRT monitors, old terminals, industrial control panels, and pixel-era learning machines.
 
@@ -113,9 +140,9 @@ Mompy should feel like an intelligent training machine, not a normal website.
 
 ---
 
-## 🧱 Architecture
+## Architecture
 
-Mompy is being organized as a frontend + Python backend project.
+Mompy is being organized as a **frontend + Python backend** project.
 
 ```txt
 Mompy
@@ -135,7 +162,7 @@ The frontend keeps the visual experience. The Python backend is the official log
 
 ---
 
-## 🛠️ Technology stack
+## Technology stack
 
 Current / planned stack:
 
@@ -152,7 +179,7 @@ The project is local-first. Online accounts, cloud sync, and remote services are
 
 ---
 
-## 📦 Downloads
+## Downloads
 
 Installable builds are being prepared.
 
@@ -162,7 +189,7 @@ Installable builds are being prepared.
 | macOS | Planned later |
 | Linux | Planned later |
 
-Downloads will be published here:
+Downloads will be published on GitHub Releases:
 
 ```txt
 https://github.com/hepter-studios/mompy/releases
@@ -170,7 +197,7 @@ https://github.com/hepter-studios/mompy/releases
 
 ---
 
-## 🚀 Run from source
+## Run from source
 
 Clone the repository:
 
@@ -199,7 +226,7 @@ source .venv/bin/activate
 
 ---
 
-## 📁 Target project structure
+## Target project structure
 
 ```txt
 mompy/
@@ -236,18 +263,19 @@ mompy/
 
 ---
 
-## 🧭 Roadmap
+## Roadmap
 
 | Stage | Focus |
 | --- | --- |
 | Now | Finish the frontend, guided lessons, mission flow, audio, and local profile. |
 | Next | Connect the frontend to the Python backend with a desktop bridge. |
-| After that | Move validation, progress, XP, and safe code execution into Python. |
+| Backend | Move validation, progress, XP, and safe code execution into Python. |
 | Release | Package the first Windows build and publish it on GitHub Releases. |
+| Later | Add more Python modules beyond the first 30 missions. |
 
 ---
 
-## 🧪 Release checklist
+## Release checklist
 
 Before the first public installable build:
 
@@ -264,7 +292,7 @@ Before the first public installable build:
 
 ---
 
-## 🔒 Local-first philosophy
+## Local-first philosophy
 
 Mompy should work without forcing the learner to create an online account.
 
@@ -274,7 +302,7 @@ Future online features may exist, but they should be optional.
 
 ---
 
-## 🤔 Questions, bugs, or ideas?
+## Questions, bugs, or ideas?
 
 Use GitHub Issues:
 
@@ -286,13 +314,13 @@ Security reports should follow the [Security Policy](SECURITY.md).
 
 ---
 
-## 💬 Community
+## Community
 
 Discord community: **coming soon**.
 
 ---
 
-## 🌐 Official website
+## Official website
 
 ```txt
 https://mompy.co
@@ -302,7 +330,7 @@ The website will be used for presentation, screenshots, downloads, release notes
 
 ---
 
-## ⭐ Star History
+## Star History
 
 <p align="center">
   <a href="https://www.star-history.com/?repos=hepter-studios%2Fmompy&type=date&legend=top-left">
@@ -316,7 +344,7 @@ The website will be used for presentation, screenshots, downloads, release notes
 
 ---
 
-## ⚡ Contributors
+## Contributors
 
 <a href="https://github.com/hepter-studios/mompy/graphs/contributors" alt="View Contributors">
   <img src="https://contrib.rocks/image?repo=hepter-studios/mompy&max=1000&columns=10" alt="Mompy contributors" />
@@ -324,7 +352,7 @@ The website will be used for presentation, screenshots, downloads, release notes
 
 ---
 
-## 📚 Project standards
+## Project standards
 
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Contributing Guide](CONTRIBUTING.md)
@@ -333,7 +361,7 @@ The website will be used for presentation, screenshots, downloads, release notes
 
 ---
 
-## 👤 Creator
+## Creator
 
 Created by **Mackson Victor**.
 
@@ -343,7 +371,7 @@ Organization: [Hepter Studios](https://github.com/hepter-studios)
 
 ---
 
-## 📌 Project status
+## Project status
 
 Mompy is currently in active development.
 
@@ -351,7 +379,7 @@ The repository may change frequently while the Python backend, guided lessons, s
 
 ---
 
-## 📄 License
+## License
 
 Mompy is not currently released under an open-source license.
 

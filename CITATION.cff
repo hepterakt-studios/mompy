@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Mompy, please cite it as below."
+title: "Mompy"
+authors:
+  - family-names: "Victor"
+    given-names: "Mackson"
+abstract: "Mompy is a retro Python training console built to help beginners learn Python from zero through guided lessons, coding missions, instant feedback, progress, XP, and a CRT-style desktop experience."
+keywords:
+  - python
+  - education
+  - learn-python
+  - beginner-friendly
+  - coding
+  - desktop-app
+  - gamified-learning
+  - local-first
+  - retro
+  - crt
+license: "MIT"
+repository-code: "https://github.com/hepter-studios/mompy"
+url: "https://mompy.co"

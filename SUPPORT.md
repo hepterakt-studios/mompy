@@ -2,7 +2,7 @@
 
 Thanks for using and following Mompy.
 
-Support currently happens through GitHub.
+Support currently happens through GitHub and the Mompy Discord community.
 
 ## Quick Links
 
@@ -10,6 +10,7 @@ Support currently happens through GitHub.
 | --- | --- |
 | Download Mompy | [GitHub Releases](https://github.com/hepter-studios/mompy/releases) |
 | Latest release | [Mompy v0.1.0](https://github.com/hepter-studios/mompy/releases/tag/v0.1.0) |
+| Community chat | [Mompy Discord](https://discord.gg/fqxvyGFyfa) |
 | Report a bug | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
 | Ask a question | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
 | Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |
@@ -79,6 +80,7 @@ GitHub's official guide:
 | Website | [mompy.co](https://mompy.co) |
 | Repository | [github.com/hepter-studios/mompy](https://github.com/hepter-studios/mompy) |
 | Releases | [GitHub Releases](https://github.com/hepter-studios/mompy/releases) |
+| Discord | [discord.gg/fqxvyGFyfa](https://discord.gg/fqxvyGFyfa) |
 | Discussions | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
 | Issues | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
 
@@ -90,6 +92,8 @@ If a report involves security, local file access or executable behavior, follow 
 
 ## Social Channels
 
-Discord, X/Twitter, YouTube, Instagram and TikTok links will be added only after official channels exist.
+Discord is available now:
 
-Until then, GitHub is the official support channel.
+- [Mompy Discord](https://discord.gg/fqxvyGFyfa)
+
+X/Twitter, YouTube, Instagram and TikTok links will be added only after official channels exist.

@@ -20,6 +20,8 @@
   ·
   <a href="https://github.com/hepter-studios/mompy/releases"><strong>Download</strong></a>
   ·
+  <a href="https://discord.gg/fqxvyGFyfa"><strong>Discord</strong></a>
+  ·
   <a href="https://github.com/hepter-studios/mompy/issues"><strong>Issues</strong></a>
   ·
   <a href="CONTRIBUTING.md"><strong>Contributing</strong></a>
@@ -71,6 +73,24 @@ Current platform status:
 | Windows portable zip | Available in Releases | [Download zip](https://github.com/hepter-studios/mompy/releases/download/v0.1.0/Mompy-windows-x64.zip) |
 | macOS | Planned | [Roadmap](#roadmap) |
 | Linux | Planned | [Roadmap](#roadmap) |
+
+## Questions? Problems? Suggestions?
+
+Join the Mompy community on Discord, report bugs through GitHub Issues or start a discussion on GitHub.
+
+<p align="center">
+  <a href="https://discord.gg/fqxvyGFyfa">
+    <img src="https://discord.com/api/guilds/1516113994287415316/widget.png?style=banner2" alt="Join the Mompy Discord server">
+  </a>
+</p>
+
+| Need | Link |
+| --- | --- |
+| Community chat | [Join the Mompy Discord](https://discord.gg/fqxvyGFyfa) |
+| Bug reports | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
+| Questions and ideas | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
+| Support guide | [SUPPORT.md](SUPPORT.md) |
+| Security reports | [SECURITY.md](SECURITY.md) |
 
 ## Screenshots
 
@@ -370,6 +390,8 @@ Release rule:
 | Repository | [github.com/hepter-studios/mompy](https://github.com/hepter-studios/mompy) |
 | Releases | [GitHub Releases](https://github.com/hepter-studios/mompy/releases) |
 | Latest release | [Mompy v0.1.0](https://github.com/hepter-studios/mompy/releases/tag/v0.1.0) |
+| Discord | [discord.gg/fqxvyGFyfa](https://discord.gg/fqxvyGFyfa) |
+| Discussions | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
 | Issues | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
 | Contributors | [Contributors graph](https://github.com/hepter-studios/mompy/graphs/contributors) |
 | License | [LICENSE](LICENSE) |
@@ -383,15 +405,16 @@ Release rule:
 
 - [Website](https://mompy.co)
 - [GitHub](https://github.com/hepter-studios/mompy)
+- [Discord](https://discord.gg/fqxvyGFyfa)
+- [Discussions](https://github.com/hepter-studios/mompy/discussions)
 - [Issues](https://github.com/hepter-studios/mompy/issues)
 - [Contributors](https://github.com/hepter-studios/mompy/graphs/contributors)
-- Discord: coming soon
 - X/Twitter: coming soon
 - YouTube: coming soon
 - Instagram: coming soon
 - TikTok: coming soon
 
-Official social links are intentionally not listed until they exist.
+Additional official social links are intentionally not listed until they exist.
 
 ## Contributors
 

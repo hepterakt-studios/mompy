@@ -2,17 +2,21 @@
 
 Thanks for using and following Mompy.
 
-Mompy support currently happens through GitHub.
+Support currently happens through GitHub.
 
-## Get Help
+## Quick Links
 
-- Open a question or bug report in [GitHub Issues](https://github.com/hepter-studios/mompy/issues).
-- Start a community conversation in [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions).
-- Check the latest builds on the [GitHub Releases page](https://github.com/hepter-studios/mompy/releases).
-- Read the contribution guide in [CONTRIBUTING.md](CONTRIBUTING.md).
-- Read the security policy in [SECURITY.md](SECURITY.md).
+| Need | Where To Go |
+| --- | --- |
+| Download Mompy | [GitHub Releases](https://github.com/hepter-studios/mompy/releases) |
+| Latest release | [Mompy v0.1.0](https://github.com/hepter-studios/mompy/releases/tag/v0.1.0) |
+| Report a bug | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
+| Ask a question | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
+| Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Security report | [SECURITY.md](SECURITY.md) |
+| License terms | [LICENSE](LICENSE) |
 
-Before opening an issue, please check if a similar one already exists.
+Before opening a new issue, please check if a similar one already exists.
 
 ## What To Include
 
@@ -23,13 +27,37 @@ When reporting a problem, include:
 - steps to reproduce;
 - screenshots, videos or logs when useful;
 - your operating system;
-- the Mompy version or commit.
+- the Mompy version or commit;
+- whether you used the installer, portable zip or source version.
+
+## Good Report Template
+
+```md
+## Problem
+Describe what happened.
+
+## Steps To Reproduce
+1. Open Mompy.
+2. Click ...
+3. See ...
+
+## Expected Result
+Describe what should have happened.
+
+## Environment
+- OS:
+- Mompy version:
+- Installer, portable zip or source:
+
+## Attachments
+Add screenshots, GIFs or logs when useful.
+```
 
 ## Writing On GitHub
 
 Issues, pull requests and discussions use GitHub Markdown.
 
-You can use Markdown to add:
+Useful formatting:
 
 - headings;
 - lists;
@@ -40,28 +68,28 @@ You can use Markdown to add:
 - checklists;
 - tables.
 
-If you are not sure how to format a post, use GitHub's official guide:
+GitHub's official guide:
 
 - [Basic writing and formatting syntax](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-Useful structure for a good report:
-
-- Problem: describe what happened.
-- Steps to reproduce: list what you clicked or ran.
-- Expected result: describe what should have happened.
-- Screenshots/GIFs: attach them when useful.
-- Code: wrap code in fenced code blocks when posting.
-- Checklist: use `- [ ]` and `- [x]` when useful.
-
 ## Official Links
 
-- Website: [mompy.co](https://mompy.co)
-- Repository: [github.com/hepter-studios/mompy](https://github.com/hepter-studios/mompy)
-- Discussions: [github.com/hepter-studios/mompy/discussions](https://github.com/hepter-studios/mompy/discussions)
-- Latest release: [Mompy v0.1.0](https://github.com/hepter-studios/mompy/releases/tag/v0.1.0)
+| Link | Destination |
+| --- | --- |
+| Website | [mompy.co](https://mompy.co) |
+| Repository | [github.com/hepter-studios/mompy](https://github.com/hepter-studios/mompy) |
+| Releases | [GitHub Releases](https://github.com/hepter-studios/mompy/releases) |
+| Discussions | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
+| Issues | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
 
 ## Private Information
 
-Do not post passwords, tokens or personal private information in public issues.
+Do not post passwords, tokens, private files or personal information in public issues.
+
+If a report involves security, local file access or executable behavior, follow [SECURITY.md](SECURITY.md).
+
+## Social Channels
 
 Discord, X/Twitter, YouTube, Instagram and TikTok links will be added only after official channels exist.
+
+Until then, GitHub is the official support channel.

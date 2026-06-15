@@ -1,61 +1,59 @@
 # Contributing to Mompy
 
-Thank you for your interest in Mompy.
+Thank you for your interest in improving Mompy.
 
-Mompy is still in active development, so contributions should stay focused, simple, and aligned with the project direction.
+Mompy is maintained by Hepter Studios. Contributions are welcome when they are focused, testable and aligned with the current product direction.
 
-## Project direction
+## Where To Help
 
-Mompy is a retro CRT-style Python training app for beginners.
+| Area | Good contributions |
+| --- | --- |
+| Lessons | Clearer explanations, better sequencing, missing examples. |
+| Missions | Beginner-safe challenges, validation fixes, improved feedback. |
+| Python backend | Validation, progress, XP, safe execution and tests. |
+| Interface | Small polish, accessibility, layout fixes and visual consistency. |
+| Packaging | Windows installer improvements, future macOS and Linux packages. |
+| Documentation | Setup notes, troubleshooting, release instructions and screenshots. |
 
-The project priorities are:
+## Before Opening A Pull Request
 
-- clear beginner-friendly Python lessons and missions;
-- a polished retro/CRT interface;
-- a Python backend for mission validation, progress, XP, and safe code execution;
-- local-first progress and profile storage;
-- simple desktop packaging;
-- no unnecessary server, login, or cloud dependency for the first version.
-
-## Before contributing
-
-Please open an issue before making large changes.
+Please open or comment on an issue before large changes.
 
 Good issues include:
 
-- bug reports;
-- interface problems;
-- mission ideas;
-- lesson improvements;
+- reproducible bug reports;
+- interface alignment or usability problems;
+- mission ideas with the target learning block;
+- lesson improvements tied to a specific concept;
 - accessibility improvements;
-- documentation improvements;
-- packaging improvements.
+- packaging and installation problems;
+- documentation corrections.
 
-## Pull request guidelines
+## Pull Request Rules
 
 When submitting a pull request:
 
 1. Keep the change focused.
-2. Do not redesign the interface without discussion.
-3. Do not add online accounts, passwords, or cloud sync unless there is an approved plan.
-4. Do not commit generated builds, installers, virtual environments, temporary files, or local progress data.
-5. Test the app locally before submitting.
-6. Explain what changed and why.
+2. Explain what changed and why.
+3. Preserve the current CRT/industrial visual identity unless the design change was discussed first.
+4. Do not add online accounts, passwords, telemetry, cloud sync or server dependencies without an approved plan.
+5. Do not commit generated builds, installers, virtual environments, temporary files or local progress data.
+6. Test the app locally before submitting.
 
-## Development setup
+## Development Setup
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/hepter-studios/mompy.git
 cd mompy
 ```
 
-When the Python desktop setup is ready, the expected flow will be:
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
 ```
 
 On macOS/Linux:
@@ -64,19 +62,84 @@ On macOS/Linux:
 source .venv/bin/activate
 ```
 
-The commands may change while the Python backend and desktop bridge are being completed.
+Install dependencies:
 
-## Code style
+```bash
+python -m pip install -r requirements.txt
+```
 
-- Keep HTML, CSS, and JavaScript readable.
-- Keep Python modules simple and beginner-friendly.
-- Prefer clear names over clever names.
-- Keep UI behavior simple and predictable.
-- Preserve the current Mompy visual identity unless a visual change is requested.
+Run the desktop app:
+
+```bash
+python main.py
+```
+
+Run the browser preview for development:
+
+```bash
+python main.py --serve --port 8770
+```
+
+Then open:
+
+```txt
+http://127.0.0.1:8770/frontend/index.html
+```
+
+## Test Checklist
+
+Before opening a pull request, run the checks that match your change:
+
+```bash
+python -m unittest discover -s tests
+python main.py --check
+node --check frontend/js/app.js
+```
+
+For packaging changes on Windows:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/build_windows.ps1 -Zip
+powershell -ExecutionPolicy Bypass -File scripts/build_windows_installer.ps1 -SkipAppBuild
+```
+
+## Code Style
+
+- Keep Python modules small, readable and easy to test.
 - Keep mission logic understandable for Python contributors.
+- Prefer clear names over clever abstractions.
+- Keep HTML, CSS and JavaScript readable.
+- Preserve stable layout measurements unless the task is specifically visual.
+- Use relative paths for assets and project files.
+- Keep local-first behavior as the default.
 
-## Local-first rule
+## Learning Design Rule
 
-For the first desktop version, user data should stay local whenever possible.
+No mission should require a concept that has not already been introduced in a guided lesson.
 
-Do not add server dependencies unless the project explicitly moves to an online/cloud phase.
+The current learning order is:
+
+1. First commands.
+2. Variables and values.
+3. Decisions.
+4. Repetition.
+5. Lists.
+6. Functions.
+
+If a mission uses `if`, `for`, lists or functions, make sure it lives in the correct block.
+
+## Release Rule
+
+Source code, documentation and small project assets belong in the repository.
+
+Generated artifacts belong in GitHub Releases, not in commits:
+
+- `.exe`
+- `.zip`
+- `.msi`
+- `.dmg`
+- `.AppImage`
+- `dist/`
+- `build/`
+- virtual environments
+- local progress files

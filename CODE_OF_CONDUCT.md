@@ -1,30 +1,39 @@
 # Code of Conduct
 
-Mompy is a project for learning, building, and improving programming education tools.
+Mompy should be a respectful and useful space for people learning, building and improving programming education tools.
 
-Everyone participating in the project is expected to help keep the community respectful, safe, and useful.
+This code of conduct applies to issues, discussions, pull requests, reviews and any future official Mompy community spaces.
 
-## Expected behavior
+## Expected Behavior
 
-- Be respectful and patient.
-- Give constructive feedback.
+- Be respectful, patient and constructive.
 - Help beginners feel welcome.
-- Stay focused on improving the project.
-- Report problems clearly and calmly.
+- Give feedback that improves the project.
+- Keep discussions focused on Mompy, Python learning, packaging, documentation and related work.
+- Report bugs and problems clearly.
+- Assume good intent when possible.
 
-## Unacceptable behavior
+## Unacceptable Behavior
 
-- Harassment, hate speech, threats, or personal attacks.
-- Disrespectful comments about identity, background, or skill level.
-- Spam, trolling, or intentionally disruptive behavior.
-- Sharing private information without permission.
+- Harassment, threats, hate speech or personal attacks.
+- Disrespectful comments about identity, background, skill level or language.
+- Spam, trolling or intentionally disruptive behavior.
+- Publishing private information without permission.
+- Repeatedly derailing technical or educational discussions.
+- Pressuring maintainers or contributors for unpaid support outside the project scope.
 
 ## Reporting
 
-If you see behavior that does not fit this code of conduct, report it through GitHub Issues or contact the project owner directly.
+If you see behavior that does not fit this code of conduct, report it through GitHub Issues, GitHub Discussions or the official contact path listed by Hepter Studios.
 
-The project owner may remove comments, close discussions, block users, or take other actions needed to protect the project and its community.
+For sensitive reports, avoid posting personal details publicly. Share only the information needed for maintainers to review the situation.
+
+## Enforcement
+
+Hepter Studios maintainers may remove comments, close discussions, lock threads, block users or take other actions needed to protect the project and its community.
+
+Enforcement decisions are made to keep the repository safe, focused and useful.
 
 ## Scope
 
-This code of conduct applies to the Mompy repository, issues, discussions, pull requests, and future community spaces related to the project.
+This policy covers official Mompy spaces only. It does not replace GitHub's own Terms of Service or Community Guidelines.

@@ -7,11 +7,11 @@
 <h1 align="center">Mompy</h1>
 
 <p align="center">
-  <strong>A retro Python training app with guided lessons, coding missions, XP, and CRT-style feedback.</strong>
+  <strong>Mompy is a retro learning console for Python programming.</strong>
 </p>
 
 <p align="center">
-  Mompy helps beginners learn Python through short lessons, focused missions, instant validation, local progress, and a friendly old-computer interface.
+  A focused desktop experience where learners practice real code through lessons, missions, progress, feedback, and challenges.
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 <p align="center">
   <a href="https://github.com/hepter-studios/mompy/releases/tag/v0.1.0"><img alt="Latest release" src="https://img.shields.io/badge/release-v0.1.0-8cff3a?style=for-the-badge"></a>
   <a href="https://github.com/hepter-studios/mompy/releases"><img alt="Download" src="https://img.shields.io/badge/download-GitHub%20Releases-1f6feb?style=for-the-badge&logo=github"></a>
-  <a href="https://github.com/hepter-studios/mompy/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Hepterakt-lightgrey?style=for-the-badge"></a>
+  <a href="https://github.com/hepter-studios/mompy/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=for-the-badge"></a>
   <a href="https://github.com/hepter-studios/mompy/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/hepter-studios/mompy?style=for-the-badge&logo=github"></a>
 </p>
 
@@ -98,11 +98,9 @@ Media files:
 - [Mission editor](assets/media/mompy-mission-editor.webp)
 - [Guided lesson](assets/media/mompy-lesson-mission.webp)
 
-## What Is Mompy?
+## What Mompy Does
 
-Mompy is a desktop-first learning app for people taking their first real steps in [Python](https://www.python.org/).
-
-Instead of opening with a blank editor, Mompy uses a retro CRT training console:
+Mompy turns Python practice into a focused desktop flow. Instead of opening with a blank editor, it gives learners a retro CRT training console with:
 
 - guided lessons before each block of missions;
 - 30 beginner-friendly missions;
@@ -113,6 +111,16 @@ Instead of opening with a blank editor, Mompy uses a retro CRT training console:
 - a CRT/industrial interface where Mompy reacts to success, errors and actions.
 
 The visual layer stays in HTML/CSS/JavaScript. The app logic, mission data, validation, progress, XP and desktop shell are Python.
+
+## Project Identity
+
+| Area | Direction |
+| --- | --- |
+| Focus | Python programming practice |
+| Format | Desktop learning console |
+| Experience | Lessons, missions, feedback, XP and progress |
+| Runtime | Python backend with a CRT-style frontend |
+| Ownership | A Hepter Studios project owned by Chevel |
 
 ## Why It Exists
 
@@ -150,6 +158,17 @@ Each mission should only ask for concepts that were already introduced in a prev
 | Progress | Stores local XP, level and completed missions through the backend. |
 | Desktop | Opens as a Python desktop app through pywebview. |
 | Releases | Publishes installable builds through GitHub Releases. |
+
+## Repository Files
+
+| File | Purpose |
+| --- | --- |
+| [README.md](README.md) | Product overview, screenshots, downloads, roadmap and source instructions. |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow, project standards and local development notes. |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community expectations for issues, discussions and pull requests. |
+| [SECURITY.md](SECURITY.md) | Security policy, reporting guidance and local-first safety goals. |
+| [SUPPORT.md](SUPPORT.md) | Where to get help, report problems and find official links. |
+| [LICENSE](LICENSE) | Ownership and usage terms. |
 
 ## Architecture
 

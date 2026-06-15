@@ -74,23 +74,29 @@ Current platform status:
 | macOS | Planned | [Roadmap](#roadmap) |
 | Linux | Planned | [Roadmap](#roadmap) |
 
-## Questions? Problems? Suggestions?
+## 👽 Questions? Problems? Suggestions?
 
-Join the Mompy community on Discord, report bugs through GitHub Issues or start a discussion on GitHub.
+Join the Mompy community, report bugs, suggest improvements or ask for help through the official channels below.
 
 <p align="center">
   <a href="https://discord.gg/fqxvyGFyfa">
-    <img src="https://discord.com/api/guilds/1516113994287415316/widget.png?style=banner2" alt="Join the Mompy Discord server">
+    <img alt="Discord" src="https://img.shields.io/discord/1516113994287415316?color=8cff3a&label=Discord&logo=discord&logoColor=white&style=for-the-badge">
+  </a>
+  <a href="https://github.com/hepter-studios/mompy/issues">
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/hepter-studios/mompy?color=8cff3a&logo=github&style=for-the-badge">
+  </a>
+  <a href="https://github.com/hepter-studios/mompy/discussions">
+    <img alt="GitHub Discussions" src="https://img.shields.io/badge/Discussions-GitHub-8cff3a?style=for-the-badge&logo=github">
   </a>
 </p>
 
-| Need | Link |
+| Channel | Use It For |
 | --- | --- |
-| Community chat | [Join the Mompy Discord](https://discord.gg/fqxvyGFyfa) |
-| Bug reports | [GitHub Issues](https://github.com/hepter-studios/mompy/issues) |
-| Questions and ideas | [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) |
-| Support guide | [SUPPORT.md](SUPPORT.md) |
-| Security reports | [SECURITY.md](SECURITY.md) |
+| 👽 [Discord](https://discord.gg/fqxvyGFyfa) | Community chat, quick questions, Python help and Mompy discussion. |
+| 🧪 [GitHub Issues](https://github.com/hepter-studios/mompy/issues) | Bugs, reproducible problems and feature requests. |
+| 💡 [GitHub Discussions](https://github.com/hepter-studios/mompy/discussions) | Ideas, questions, learning feedback and broader conversations. |
+| 🛠️ [Support Guide](SUPPORT.md) | How to report problems clearly and find official links. |
+| 🛡️ [Security Policy](SECURITY.md) | Security reports, unsafe behavior or release integrity concerns. |
 
 ## Screenshots
 

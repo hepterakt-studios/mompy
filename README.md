@@ -1,53 +1,51 @@
-<p align="center">
-  <a href="https://github.com/hepter-studios/mompy">
-    <img src="assets/branding/mompy-cover.webp" alt="Mompy retro CRT monitor preview" width="520">
-  </a>
-</p>
-<h1 align="center">Mompy</h1>
+<div align="center">
 
-<p align="center">
-  <strong>Mompy is a retro learning console for Python programming.</strong>
-</p>
+<a href="https://github.com/hepter-studios/mompy">
+  <img src="assets/branding/mompy-cover.webp" alt="Mompy retro CRT monitor preview" width="560">
+</a>
 
-<p align="center">
-  A focused desktop experience where learners practice real code through lessons, missions, progress, feedback, and challenges.
-</p>
+# Mompy
 
-<p align="center">
-  <a href="https://mompy.co"><strong>Website</strong></a>
-  ·
-  <a href="https://github.com/hepter-studios/mompy"><strong>Repository</strong></a>
-  ·
-  <a href="https://github.com/hepter-studios/mompy/releases"><strong>Download</strong></a>
-  ·
-  <a href="https://discord.gg/fqxvyGFyfa"><strong>Discord</strong></a>
-  ·
-  <a href="https://github.com/hepter-studios/mompy/issues"><strong>Issues</strong></a>
-  ·
-  <a href="CONTRIBUTING.md"><strong>Contributing</strong></a>
-  ·
-  <a href="SUPPORT.md"><strong>Support</strong></a>
-</p>
+**A retro learning console for Python programming.**
 
-<p align="center">
-  <a href="https://github.com/hepter-studios/mompy/releases/tag/v0.1.0"><img alt="Latest release" src="https://img.shields.io/badge/release-v0.1.0-8cff3a?style=for-the-badge"></a>
-  <a href="https://github.com/hepter-studios/mompy/releases"><img alt="Download" src="https://img.shields.io/badge/download-GitHub%20Releases-1f6feb?style=for-the-badge&logo=github"></a>
-  <a href="https://github.com/hepter-studios/mompy/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=for-the-badge"></a>
-  <a href="https://github.com/hepter-studios/mompy/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/hepter-studios/mompy?style=for-the-badge&logo=github"></a>
-</p>
+A focused desktop experience where learners practice real Python through lessons, missions, progress, feedback, and challenges.
 
-<p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-learning-3776ab?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="Backend" src="https://img.shields.io/badge/backend-Python-14354C?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="Frontend" src="https://img.shields.io/badge/frontend-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black">
-  <img alt="Desktop" src="https://img.shields.io/badge/desktop-pywebview-8cff3a?style=for-the-badge">
-  <img alt="Local first" src="https://img.shields.io/badge/local--first-no%20account-8cff3a?style=for-the-badge">
-</p>
+<a href="https://mompy.co"><strong>Website</strong></a>
+ · <a href="https://github.com/hepter-studios/mompy/releases"><strong>Download</strong></a>
+ · <a href="https://discord.gg/fqxvyGFyfa"><strong>Discord</strong></a>
+ · <a href="https://github.com/hepter-studios/mompy/issues"><strong>Issues</strong></a>
+ · <a href="https://github.com/hepter-studios/mompy/discussions"><strong>Discussions</strong></a>
+ · <a href="SUPPORT.md"><strong>Support</strong></a>
+
+<br>
+
+<a href="https://github.com/hepter-studios/mompy/releases/tag/v0.1.0">
+  <img alt="Latest release" src="https://img.shields.io/badge/release-v0.1.0-8cff3a?style=for-the-badge">
+</a>
+<a href="https://github.com/hepter-studios/mompy/releases">
+  <img alt="Download" src="https://img.shields.io/badge/download-GitHub%20Releases-2f3136?style=for-the-badge&logo=github&logoColor=white">
+</a>
+<a href="https://github.com/hepter-studios/mompy/blob/main/LICENSE">
+  <img alt="License" src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=for-the-badge">
+</a>
+
+<br><br>
+
+<a href="#-demo">Demo</a>
+ · <a href="#-download">Download</a>
+ · <a href="#-questions-problems-suggestions">Help</a>
+ · <a href="#-screenshots">Screenshots</a>
+ · <a href="#-learning-path">Learning Path</a>
+ · <a href="#-run-from-source">Run From Source</a>
+
+</div>
 
 > [!NOTE]
 > Mompy is in active development. The first Windows package is available in [GitHub Releases](https://github.com/hepter-studios/mompy/releases), and the source code remains the canonical reference for every feature listed here.
 
-## Demo
+---
+
+## 🖥️ Demo
 
 <p align="center">
   <a href="assets/media/mompy-demo.gif">
@@ -55,9 +53,23 @@
   </a>
 </p>
 
-## Download
+---
+
+## ⬇️ Download
 
 Download the latest official build from the [GitHub Releases page](https://github.com/hepter-studios/mompy/releases).
+
+<p>
+  <a href="https://github.com/hepter-studios/mompy/releases/tag/v0.1.0">
+    <img alt="Mompy v0.1.0" src="https://img.shields.io/badge/latest-v0.1.0-8cff3a?style=for-the-badge">
+  </a>
+  <a href="https://github.com/hepter-studios/mompy/releases/download/v0.1.0/MompySetup-v0.1.0.exe">
+    <img alt="Windows installer" src="https://img.shields.io/badge/windows-installer-2f3136?style=for-the-badge&logo=windows&logoColor=white">
+  </a>
+  <a href="https://github.com/hepter-studios/mompy/releases/download/v0.1.0/Mompy-windows-x64.zip">
+    <img alt="Portable zip" src="https://img.shields.io/badge/portable-zip-2f3136?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>
 
 Latest release:
 
@@ -71,8 +83,10 @@ Current platform status:
 | --- | --- | --- |
 | Windows installer | Available in Releases | [Download setup](https://github.com/hepter-studios/mompy/releases/download/v0.1.0/MompySetup-v0.1.0.exe) |
 | Windows portable zip | Available in Releases | [Download zip](https://github.com/hepter-studios/mompy/releases/download/v0.1.0/Mompy-windows-x64.zip) |
-| macOS | Planned | [Roadmap](#roadmap) |
-| Linux | Planned | [Roadmap](#roadmap) |
+| macOS | Planned | [Roadmap](#-roadmap) |
+| Linux | Planned | [Roadmap](#-roadmap) |
+
+---
 
 ## 👽 Questions? Problems? Suggestions?
 
@@ -88,10 +102,10 @@ Join the Mompy community, report bugs, suggest improvements or ask for help thro
 
 <p align="center">
   <a href="https://discord.gg/fqxvyGFyfa">
-    <img alt="Discord" src="https://img.shields.io/discord/1516113994287415316?color=8cff3a&label=Discord&logo=discord&logoColor=white&style=for-the-badge">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord-Community-2f3136?style=for-the-badge&logo=discord&logoColor=white">
   </a>
   <a href="https://github.com/hepter-studios/mompy/issues">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/hepter-studios/mompy?color=8cff3a&logo=github&style=for-the-badge">
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/hepter-studios/mompy?color=8cff3a&label=Issues&logo=github&style=for-the-badge">
   </a>
   <a href="https://github.com/hepter-studios/mompy/discussions">
     <img alt="GitHub Discussions" src="https://img.shields.io/badge/Discussions-GitHub-8cff3a?style=for-the-badge&logo=github">
@@ -106,7 +120,9 @@ Join the Mompy community, report bugs, suggest improvements or ask for help thro
 | 🛠️ [Support Guide](SUPPORT.md) | How to report problems clearly and find official links. |
 | 🛡️ [Security Policy](SECURITY.md) | Security reports, unsafe behavior or release integrity concerns. |
 
-## Screenshots
+---
+
+## 📸 Screenshots
 
 | Start Screen | First Access |
 | --- | --- |
@@ -122,7 +138,8 @@ Join the Mompy community, report bugs, suggest improvements or ask for help thro
   </a>
 </p>
 
-Media files:
+<details>
+<summary>Media files</summary>
 
 - [Demo GIF](assets/media/mompy-demo.gif)
 - [Preview grid](assets/media/mompy-preview-grid.webp)
@@ -131,7 +148,17 @@ Media files:
 - [Mission editor](assets/media/mompy-mission-editor.webp)
 - [Guided lesson](assets/media/mompy-lesson-mission.webp)
 
-## What Mompy Does
+</details>
+
+---
+
+## 💚 What Mompy Does
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-learning-3776ab?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="Beginner missions" src="https://img.shields.io/badge/missions-beginner%20path-8cff3a?style=for-the-badge">
+  <img alt="Local first" src="https://img.shields.io/badge/local--first-no%20account-8cff3a?style=for-the-badge">
+</p>
 
 Mompy turns Python practice into a focused desktop flow. Instead of opening with a blank editor, it gives learners a retro CRT training console with:
 
@@ -145,17 +172,9 @@ Mompy turns Python practice into a focused desktop flow. Instead of opening with
 
 The visual layer stays in HTML/CSS/JavaScript. The app logic, mission data, validation, progress, XP and desktop shell are Python.
 
-## Project Identity
+---
 
-| Area | Direction |
-| --- | --- |
-| Focus | Python programming practice |
-| Format | Desktop learning console |
-| Experience | Lessons, missions, feedback, XP and progress |
-| Runtime | Python backend with a CRT-style frontend |
-| Ownership | A Hepter Studios project owned by Chevel |
-
-## Why It Exists
+## 🧠 Why It Exists
 
 Many beginner tools jump too quickly into concepts such as `if`, loops or functions. Mompy is designed around a gentler learning curve:
 
@@ -168,7 +187,9 @@ Many beginner tools jump too quickly into concepts such as `if`, loops or functi
 
 Each mission should only ask for concepts that were already introduced in a previous guided lesson.
 
-## Learning Path
+---
+
+## 🐍 Learning Path
 
 | Block | Missions | Topic | Concepts |
 | --- | --- | --- | --- |
@@ -179,7 +200,9 @@ Each mission should only ask for concepts that were already introduced in a prev
 | 05 | 21-25 | Lists | brackets, items, commas, indexes, iterating over lists |
 | 06 | 26-30 | Functions | `def`, calls, parameters, `return`, indentation |
 
-## Features
+---
+
+## 🧩 Features
 
 | Area | What Mompy Does |
 | --- | --- |
@@ -192,18 +215,27 @@ Each mission should only ask for concepts that were already introduced in a prev
 | Desktop | Opens as a Python desktop app through pywebview. |
 | Releases | Publishes installable builds through GitHub Releases. |
 
-## Repository Files
+---
 
-| File | Purpose |
+## 🏷️ Project Identity
+
+| Area | Direction |
 | --- | --- |
-| [README.md](README.md) | Product overview, screenshots, downloads, roadmap and source instructions. |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow, project standards and local development notes. |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community expectations for issues, discussions and pull requests. |
-| [SECURITY.md](SECURITY.md) | Security policy, reporting guidance and local-first safety goals. |
-| [SUPPORT.md](SUPPORT.md) | Where to get help, report problems and find official links. |
-| [LICENSE](LICENSE) | Ownership and usage terms. |
+| Focus | Python programming practice |
+| Format | Desktop learning console |
+| Experience | Lessons, missions, feedback, XP and progress |
+| Runtime | Python backend with a CRT-style frontend |
+| Ownership | A Hepter Studios project owned by Chevel |
 
-## Architecture
+---
+
+## ⚙️ Architecture
+
+<p>
+  <img alt="Backend" src="https://img.shields.io/badge/backend-Python-14354C?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="Frontend" src="https://img.shields.io/badge/frontend-HTML%20%7C%20CSS%20%7C%20JS-f7df1e?style=for-the-badge&logo=javascript&logoColor=black">
+  <img alt="Desktop" src="https://img.shields.io/badge/desktop-pywebview-8cff3a?style=for-the-badge">
+</p>
 
 ```txt
 mompy/
@@ -251,7 +283,9 @@ Important files:
 - [frontend/css/styles.css](frontend/css/styles.css) controls the CRT/industrial layout.
 - [scripts/build_windows.ps1](scripts/build_windows.ps1) builds the Windows desktop package.
 
-## Run From Source
+---
+
+## 🚀 Run From Source
 
 Requirements:
 
@@ -288,7 +322,9 @@ Then open:
 http://127.0.0.1:8770/frontend/index.html
 ```
 
-## Build For Windows
+---
+
+## 📦 Build For Windows
 
 Mompy uses [PyInstaller](https://pyinstaller.org/) to create a Windows desktop package.
 
@@ -320,7 +356,9 @@ dist/MompySetup-v0.1.0.exe
 
 Build artifacts such as `.exe`, `.zip`, `.msi`, `.dmg` or `.AppImage` should not be committed directly to the repository. They should be attached to a [GitHub Release](https://github.com/hepter-studios/mompy/releases).
 
-## Tests
+---
+
+## 🧪 Tests
 
 Run the backend test suite:
 
@@ -350,7 +388,9 @@ The `v0.1.0` Windows package was locally checked with:
 - installer install smoke test
 - installed executable startup smoke test
 
-## Trust And Verification
+---
+
+## 🛡️ Trust And Verification
 
 Mompy is intended to be easy to verify:
 
@@ -364,7 +404,9 @@ Mompy is intended to be easy to verify:
 - license information is in [LICENSE](LICENSE);
 - support guidance is in [SUPPORT.md](SUPPORT.md).
 
-## Releases
+---
+
+## 🏁 Releases
 
 Official builds are distributed through [GitHub Releases](https://github.com/hepter-studios/mompy/releases).
 
@@ -381,7 +423,9 @@ Release rule:
 - Attach tested desktop packages to the release page.
 - Keep release notes honest about what was tested.
 
-## Roadmap
+---
+
+## 🗺️ Roadmap
 
 | Phase | Status |
 | --- | --- |
@@ -396,7 +440,22 @@ Release rule:
 | Linux package | Planned |
 | more lessons and missions | Planned |
 
-## Project Links
+---
+
+## 🗂️ Repository Files
+
+| File | Purpose |
+| --- | --- |
+| [README.md](README.md) | Product overview, screenshots, downloads, roadmap and source instructions. |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow, project standards and local development notes. |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community expectations for issues, discussions and pull requests. |
+| [SECURITY.md](SECURITY.md) | Security policy, reporting guidance and local-first safety goals. |
+| [SUPPORT.md](SUPPORT.md) | Where to get help, report problems and find official links. |
+| [LICENSE](LICENSE) | Ownership and usage terms. |
+
+---
+
+## 🔗 Project Links
 
 | Link | Destination |
 | --- | --- |
@@ -415,28 +474,11 @@ Release rule:
 | Build script | [scripts/build_windows.ps1](scripts/build_windows.ps1) |
 | Installer script | [scripts/build_windows_installer.ps1](scripts/build_windows_installer.ps1) |
 
-## Community
-
-- [Website](https://mompy.co)
-- [GitHub](https://github.com/hepter-studios/mompy)
-- [Discord](https://discord.gg/fqxvyGFyfa)
-- [Discussions](https://github.com/hepter-studios/mompy/discussions)
-- [Issues](https://github.com/hepter-studios/mompy/issues)
-- [Contributors](https://github.com/hepter-studios/mompy/graphs/contributors)
-- X/Twitter: coming soon
-- YouTube: coming soon
-- Instagram: coming soon
-- TikTok: coming soon
-
 Additional official social links are intentionally not listed until they exist.
 
-## Contributors
+---
 
-<a href="https://github.com/hepter-studios/mompy/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hepter-studios/mompy" alt="Mompy contributors" />
-</a>
-
-## Star History
+## ⭐ Star Stats
 
 <a href="https://www.star-history.com/?repos=hepter-studios%2Fmompy&type=date&legend=top-left">
   <picture>
@@ -446,6 +488,14 @@ Additional official social links are intentionally not listed until they exist.
   </picture>
 </a>
 
-## License
+### ⚡ Contributors
+
+<a href="https://github.com/hepter-studios/mompy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hepter-studios/mompy" alt="Mompy contributors" />
+</a>
+
+---
+
+## 📜 License
 
 License information is available in [LICENSE](LICENSE).

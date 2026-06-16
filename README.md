@@ -78,6 +78,14 @@ Current platform status:
 
 Join the Mompy community, report bugs, suggest improvements or ask for help through the official channels below.
 
+### Get help - Discord 💬
+
+<p align="center">
+  <a href="https://discord.gg/fqxvyGFyfa">
+    <img src="https://discord.com/api/guilds/1516113994287415316/widget.png?style=banner2" alt="Join the Mompy Discord server" width="520">
+  </a>
+</p>
+
 <p align="center">
   <a href="https://discord.gg/fqxvyGFyfa">
     <img alt="Discord" src="https://img.shields.io/discord/1516113994287415316?color=8cff3a&label=Discord&logo=discord&logoColor=white&style=for-the-badge">
